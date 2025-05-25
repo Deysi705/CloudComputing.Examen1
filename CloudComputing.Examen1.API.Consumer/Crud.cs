@@ -2,7 +2,7 @@
 {
     public static class Crud<T>
     {
-        public static string EndPoint {  get; set; }
+        public static string EndPoint { get; set; }
         public static async Task<T> Get(int id)
         {
             using (var client = new HttpClient())
@@ -28,10 +28,10 @@
                 if (response.IsSuccessStatusCode)
                 {
                     var json = await response.Content.ReadAsStringAsync();
-                    var data=Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(json);
+                    var data = Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(json);
                     return data;
                 }
-                else 
+                else
                 {
                     throw new Exception("Error fetching data");
                 }
@@ -41,14 +41,14 @@
         {
             using (var client = new HttpClient())
             {
-                var json=Newtonsoft.Json.JsonConvert.SerializeObject(item);
+                var json = Newtonsoft.Json.JsonConvert.SerializeObject(item);
                 var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-                var response=await client.PostAsync(EndPoint, content);
+                var response = await client.PostAsync(EndPoint, content);
                 json = await response.Content.ReadAsStringAsync();
-                if (response.IsSuccessStatusCode) 
+                if (response.IsSuccessStatusCode)
                 {
-                    var data = Newtonsoft.Json.JsonConvert.DeserializeObject<T> (json);
-                    return data;
+                    var data = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(json);
+                    return data; 
                 }
                 else
                 {
@@ -58,33 +58,33 @@
         }
         public static async Task<bool> Update(int id, T item)
         {
-            using (var client = new HttpClient()) 
+            using (var client = new HttpClient())
             {
-                var json=Newtonsoft.Json.JsonConvert.SerializeObject(item);
-                var content = new StringContent(json, System.Text.Encoding.UTF8,"application/json");
+                var json = Newtonsoft.Json.JsonConvert.SerializeObject(item);
+                var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
                 var response = await client.PutAsync(EndPoint + "/" + id, content);
                 if (response.IsSuccessStatusCode)
                 {
                     return true;
                 }
-                else 
+                else
                 {
-                    throw new Exception("Error updating data: "+response.StatusCode);
+                    throw new Exception("Error updating data: " + response.StatusCode);
                 }
             }
         }
-        public static async Task<bool> Delete(int id) 
+        public static async Task<bool> Delete(int id)
         {
-            using (var client = new HttpClient()) 
+            using (var client = new HttpClient())
             {
-                var response=await client.DeleteAsync(EndPoint + "/" + id);
+                var response = await client.DeleteAsync(EndPoint + "/" + id);
                 if (response.IsSuccessStatusCode)
                 {
                     return true;
                 }
-                else 
+                else
                 {
-                    throw new Exception("Error deleting data: " + response.StatusCode); 
+                    throw new Exception("Error deleting data: " + response.StatusCode);
                 }
             }
         }

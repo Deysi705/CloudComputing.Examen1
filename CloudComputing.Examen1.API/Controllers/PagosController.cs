@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputingExamen1.Models;
+using CloudComputing.Examen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Pagos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pago>>> GetPagos()
+        public async Task<ActionResult<IEnumerable<Pago>>> GetPago()
         {
-            return await _context.Pagos.ToListAsync();
+            return await _context.Pago.ToListAsync();
         }
 
         // GET: api/Pagos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Pago>> GetPagos(int id)
+        public async Task<ActionResult<Pago>> GetPago(int id)
         {
-            var pagos = await _context.Pagos.FindAsync(id);
+            var pago = await _context.Pago.FindAsync(id);
 
-            if (pagos == null)
+            if (pago == null)
             {
                 return NotFound();
             }
 
-            return pagos;
+            return pago;
         }
 
         // PUT: api/Pagos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPagos(int id, Pago pagos)
+        public async Task<IActionResult> PutPago(int id, Pago pago)
         {
-            if (id != pagos.Id)
+            if (id != pago.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(pagos).State = EntityState.Modified;
+            _context.Entry(pago).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PagosExists(id))
+                if (!PagoExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Pagos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Pago>> PostPagos(Pago pagos)
+        public async Task<ActionResult<Pago>> PostPago(Pago pago)
         {
-            _context.Pagos.Add(pagos);
+            _context.Pago.Add(pago);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPagos", new { id = pagos.Id }, pagos);
+            return CreatedAtAction("GetPago", new { id = pago.Id }, pago);
         }
 
         // DELETE: api/Pagos/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePagos(int id)
+        public async Task<IActionResult> DeletePago(int id)
         {
-            var pagos = await _context.Pagos.FindAsync(id);
-            if (pagos == null)
+            var pago = await _context.Pago.FindAsync(id);
+            if (pago == null)
             {
                 return NotFound();
             }
 
-            _context.Pagos.Remove(pagos);
+            _context.Pago.Remove(pago);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PagosExists(int id)
+        private bool PagoExists(int id)
         {
-            return _context.Pagos.Any(e => e.Id == id);
+            return _context.Pago.Any(e => e.Id == id);
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\bin\Debug\net8.0\CloudComputing.Examen1.Models.deps.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\bin\Debug\net8.0\CloudComputing.Examen1.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\bin\Debug\net8.0\CloudComputing.Examen1.Models.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.AssemblyInfoInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.AssemblyInfo.cs
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.csproj.CoreCompileInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\refint\CloudComputing.Examen1.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\CloudComputing.Examen1.Models.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.Models\obj\Debug\net8.0\ref\CloudComputing.Examen1.Models.dll

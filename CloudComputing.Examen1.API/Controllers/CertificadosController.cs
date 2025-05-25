@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputingExamen1.Models;
+using CloudComputing.Examen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Certificados
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Certificado>>> GetCertificados()
+        public async Task<ActionResult<IEnumerable<Certificado>>> GetCertificado()
         {
-            return await _context.Certificados.ToListAsync();
+            return await _context.Certificado.ToListAsync();
         }
 
         // GET: api/Certificados/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Certificado>> GetCertificados(int id)
+        public async Task<ActionResult<Certificado>> GetCertificado(int id)
         {
-            var certificados = await _context.Certificados.FindAsync(id);
+            var certificado = await _context.Certificado.FindAsync(id);
 
-            if (certificados == null)
+            if (certificado == null)
             {
                 return NotFound();
             }
 
-            return certificados;
+            return certificado;
         }
 
         // PUT: api/Certificados/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCertificados(int id, Certificado certificados)
+        public async Task<IActionResult> PutCertificado(int id, Certificado certificado)
         {
-            if (id != certificados.Id)
+            if (id != certificado.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(certificados).State = EntityState.Modified;
+            _context.Entry(certificado).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CertificadosExists(id))
+                if (!CertificadoExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Certificados
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Certificado>> PostCertificados(Certificado certificados)
+        public async Task<ActionResult<Certificado>> PostCertificado(Certificado certificado)
         {
-            _context.Certificados.Add(certificados);
+            _context.Certificado.Add(certificado);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCertificados", new { id = certificados.Id }, certificados);
+            return CreatedAtAction("GetCertificado", new { id = certificado.Id }, certificado);
         }
 
         // DELETE: api/Certificados/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCertificados(int id)
+        public async Task<IActionResult> DeleteCertificado(int id)
         {
-            var certificados = await _context.Certificados.FindAsync(id);
-            if (certificados == null)
+            var certificado = await _context.Certificado.FindAsync(id);
+            if (certificado == null)
             {
                 return NotFound();
             }
 
-            _context.Certificados.Remove(certificados);
+            _context.Certificado.Remove(certificado);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool CertificadosExists(int id)
+        private bool CertificadoExists(int id)
         {
-            return _context.Certificados.Any(e => e.Id == id);
+            return _context.Certificado.Any(e => e.Id == id);
         }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputingExamen1.Models;
+using CloudComputing.Examen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Espacios
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Espacio>>> GetEspacios()
+        public async Task<ActionResult<IEnumerable<Espacio>>> GetEspacio()
         {
-            return await _context.Espacios.ToListAsync();
+            return await _context.Espacio.ToListAsync();
         }
 
         // GET: api/Espacios/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Espacio>> GetEspacios(int id)
+        public async Task<ActionResult<Espacio>> GetEspacio(int id)
         {
-            var espacios = await _context.Espacios.FindAsync(id);
+            var espacio = await _context.Espacio.FindAsync(id);
 
-            if (espacios == null)
+            if (espacio == null)
             {
                 return NotFound();
             }
 
-            return espacios;
+            return espacio;
         }
 
         // PUT: api/Espacios/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEspacios(int id, Espacio espacios)
+        public async Task<IActionResult> PutEspacio(int id, Espacio espacio)
         {
-            if (id != espacios.Id)
+            if (id != espacio.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(espacios).State = EntityState.Modified;
+            _context.Entry(espacio).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EspaciosExists(id))
+                if (!EspacioExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Espacios
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Espacio>> PostEspacios(Espacio espacios)
+        public async Task<ActionResult<Espacio>> PostEspacio(Espacio espacio)
         {
-            _context.Espacios.Add(espacios);
+            _context.Espacio.Add(espacio);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetEspacios", new { id = espacios.Id }, espacios);
+            return CreatedAtAction("GetEspacio", new { id = espacio.Id }, espacio);
         }
 
         // DELETE: api/Espacios/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEspacios(int id)
+        public async Task<IActionResult> DeleteEspacio(int id)
         {
-            var espacios = await _context.Espacios.FindAsync(id);
-            if (espacios == null)
+            var espacio = await _context.Espacio.FindAsync(id);
+            if (espacio == null)
             {
                 return NotFound();
             }
 
-            _context.Espacios.Remove(espacios);
+            _context.Espacio.Remove(espacio);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool EspaciosExists(int id)
+        private bool EspacioExists(int id)
         {
-            return _context.Espacios.Any(e => e.Id == id);
+            return _context.Espacio.Any(e => e.Id == id);
         }
     }
 }

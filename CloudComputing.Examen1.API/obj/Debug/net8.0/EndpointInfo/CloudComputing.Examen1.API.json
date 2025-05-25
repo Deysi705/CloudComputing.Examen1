@@ -375,10 +375,10 @@
         }
       }
     },
-    "/api/EventoPonentes": {
+    "/api/Especialidades": {
       "get": {
         "tags": [
-          "EventoPonentes"
+          "Especialidades"
         ],
         "responses": {
           "200": {
@@ -388,7 +388,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/EventoPonente"
+                    "$ref": "#/components/schemas/Especialidad"
                   }
                 }
               },
@@ -396,7 +396,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/EventoPonente"
+                    "$ref": "#/components/schemas/Especialidad"
                   }
                 }
               },
@@ -404,7 +404,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/EventoPonente"
+                    "$ref": "#/components/schemas/Especialidad"
                   }
                 }
               }
@@ -414,23 +414,23 @@
       },
       "post": {
         "tags": [
-          "EventoPonentes"
+          "Especialidades"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             }
           }
@@ -441,17 +441,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               }
             }
@@ -459,10 +459,10 @@
         }
       }
     },
-    "/api/EventoPonentes/{id}": {
+    "/api/Especialidades/{id}": {
       "get": {
         "tags": [
-          "EventoPonentes"
+          "Especialidades"
         ],
         "parameters": [
           {
@@ -481,17 +481,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/EventoPonente"
+                  "$ref": "#/components/schemas/Especialidad"
                 }
               }
             }
@@ -500,7 +500,7 @@
       },
       "put": {
         "tags": [
-          "EventoPonentes"
+          "Especialidades"
         ],
         "parameters": [
           {
@@ -517,17 +517,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/EventoPonente"
+                "$ref": "#/components/schemas/Especialidad"
               }
             }
           }
@@ -540,7 +540,562 @@
       },
       "delete": {
         "tags": [
-          "EventoPonentes"
+          "Especialidades"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EstadoCertificados": {
+      "get": {
+        "tags": [
+          "EstadoCertificados"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoCertificado"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoCertificado"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoCertificado"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EstadoCertificados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EstadoCertificados/{id}": {
+      "get": {
+        "tags": [
+          "EstadoCertificados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoCertificado"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EstadoCertificados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCertificado"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EstadoCertificados"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EstadoInscripciones": {
+      "get": {
+        "tags": [
+          "EstadoInscripciones"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoInscripcion"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoInscripcion"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoInscripcion"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EstadoInscripciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EstadoInscripciones/{id}": {
+      "get": {
+        "tags": [
+          "EstadoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoInscripcion"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EstadoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoInscripcion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EstadoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/EstadoPagos": {
+      "get": {
+        "tags": [
+          "EstadoPagos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoPago"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoPago"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EstadoPago"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EstadoPagos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/EstadoPagos/{id}": {
+      "get": {
+        "tags": [
+          "EstadoPagos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EstadoPago"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "EstadoPagos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoPago"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "EstadoPagos"
         ],
         "parameters": [
           {
@@ -745,10 +1300,10 @@
         }
       }
     },
-    "/api/HistoricoCertificados": {
+    "/api/HistorialCertificados": {
       "get": {
         "tags": [
-          "HistoricoCertificados"
+          "HistorialCertificados"
         ],
         "responses": {
           "200": {
@@ -758,7 +1313,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/HistoricoCertificado"
+                    "$ref": "#/components/schemas/HistorialCertificado"
                   }
                 }
               },
@@ -766,7 +1321,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/HistoricoCertificado"
+                    "$ref": "#/components/schemas/HistorialCertificado"
                   }
                 }
               },
@@ -774,7 +1329,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/HistoricoCertificado"
+                    "$ref": "#/components/schemas/HistorialCertificado"
                   }
                 }
               }
@@ -784,23 +1339,23 @@
       },
       "post": {
         "tags": [
-          "HistoricoCertificados"
+          "HistorialCertificados"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             }
           }
@@ -811,17 +1366,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               }
             }
@@ -829,10 +1384,10 @@
         }
       }
     },
-    "/api/HistoricoCertificados/{id}": {
+    "/api/HistorialCertificados/{id}": {
       "get": {
         "tags": [
-          "HistoricoCertificados"
+          "HistorialCertificados"
         ],
         "parameters": [
           {
@@ -851,17 +1406,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HistoricoCertificado"
+                  "$ref": "#/components/schemas/HistorialCertificado"
                 }
               }
             }
@@ -870,7 +1425,7 @@
       },
       "put": {
         "tags": [
-          "HistoricoCertificados"
+          "HistorialCertificados"
         ],
         "parameters": [
           {
@@ -887,17 +1442,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/HistoricoCertificado"
+                "$ref": "#/components/schemas/HistorialCertificado"
               }
             }
           }
@@ -910,7 +1465,7 @@
       },
       "delete": {
         "tags": [
-          "HistoricoCertificados"
+          "HistorialCertificados"
         ],
         "parameters": [
           {
@@ -1096,6 +1651,191 @@
       "delete": {
         "tags": [
           "Inscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Instituciones": {
+      "get": {
+        "tags": [
+          "Instituciones"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Institucion"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Institucion"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Institucion"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Instituciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Instituciones/{id}": {
+      "get": {
+        "tags": [
+          "Instituciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Institucion"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Instituciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Institucion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Instituciones"
         ],
         "parameters": [
           {
@@ -2225,6 +2965,191 @@
         }
       }
     },
+    "/api/TipoInscripciones": {
+      "get": {
+        "tags": [
+          "TipoInscripciones"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoInscripcion"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoInscripcion"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoInscripcion"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TipoInscripciones"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TipoInscripciones/{id}": {
+      "get": {
+        "tags": [
+          "TipoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TipoInscripcion"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TipoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoInscripcion"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TipoInscripciones"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -2290,16 +3215,19 @@
             "type": "string",
             "nullable": true
           },
-          "estado": {
-            "type": "string",
-            "nullable": true
+          "eventoId": {
+            "type": "integer",
+            "format": "int32"
           },
-          "eventosId": {
+          "estadoCertificadoId": {
             "type": "integer",
             "format": "int32"
           },
           "eventos": {
             "$ref": "#/components/schemas/Evento"
+          },
+          "estadoCertificados": {
+            "$ref": "#/components/schemas/EstadoCertificado"
           }
         },
         "additionalProperties": false
@@ -2327,6 +3255,90 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Sesion"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Especialidad": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "ponentes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ponente"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoCertificado": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "certificados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Certificado"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoInscripcion": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "inscripciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Inscripcion"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EstadoPago": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "pagos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pago"
             },
             "nullable": true
           }
@@ -2367,13 +3379,6 @@
           "tipoEventos": {
             "$ref": "#/components/schemas/TipoEvento"
           },
-          "eventoPonentes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/EventoPonente"
-            },
-            "nullable": true
-          },
           "sesiones": {
             "type": "array",
             "items": {
@@ -2387,35 +3392,18 @@
               "$ref": "#/components/schemas/Inscripcion"
             },
             "nullable": true
+          },
+          "certificados": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Certificado"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "EventoPonente": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "ponentesId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "eventosId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "ponentes": {
-            "$ref": "#/components/schemas/Ponente"
-          },
-          "eventos": {
-            "$ref": "#/components/schemas/Evento"
-          }
-        },
-        "additionalProperties": false
-      },
-      "HistoricoCertificado": {
+      "HistorialCertificado": {
         "type": "object",
         "properties": {
           "id": {
@@ -2437,13 +3425,6 @@
           "pagoId": {
             "type": "integer",
             "format": "int32"
-          },
-          "eventosId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "eventos": {
-            "$ref": "#/components/schemas/Evento"
           }
         },
         "additionalProperties": false
@@ -2459,16 +3440,30 @@
             "type": "string",
             "format": "date-time"
           },
-          "estado": {
-            "type": "string",
-            "nullable": true
+          "participanteId": {
+            "type": "integer",
+            "format": "int32"
           },
-          "participantesId": {
+          "tipoInscripcionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoInscripcionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "eventoId": {
             "type": "integer",
             "format": "int32"
           },
           "eventos": {
             "$ref": "#/components/schemas/Evento"
+          },
+          "estadoInscripciones": {
+            "$ref": "#/components/schemas/EstadoInscripcion"
+          },
+          "tipoInscripciones": {
+            "$ref": "#/components/schemas/TipoInscripcion"
           },
           "participantes": {
             "$ref": "#/components/schemas/Participante"
@@ -2477,6 +3472,39 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Pago"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Institucion": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "correoElectronico": {
+            "type": "string",
+            "nullable": true
+          },
+          "participantes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Participante"
             },
             "nullable": true
           }
@@ -2523,20 +3551,23 @@
             "type": "string",
             "nullable": true
           },
-          "estado": {
-            "type": "string",
-            "nullable": true
-          },
-          "mediosPagosId": {
+          "medioPagoId": {
             "type": "integer",
             "format": "int32"
           },
-          "inscripcionesId": {
+          "inscripcionId": {
             "type": "integer",
             "format": "int32"
           },
-          "mediosPagos": {
+          "estadoPagoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "medioPagos": {
             "$ref": "#/components/schemas/MedioPago"
+          },
+          "estadoPagos": {
+            "$ref": "#/components/schemas/EstadoPago"
           },
           "inscripciones": {
             "$ref": "#/components/schemas/Inscripcion"
@@ -2571,9 +3602,12 @@
             "type": "string",
             "nullable": true
           },
-          "institucion": {
-            "type": "string",
-            "nullable": true
+          "institucionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "instituciones": {
+            "$ref": "#/components/schemas/Institucion"
           },
           "inscripciones": {
             "type": "array",
@@ -2592,6 +3626,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "cedula": {
+            "type": "string",
+            "nullable": true
+          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -2608,14 +3646,17 @@
             "type": "string",
             "nullable": true
           },
-          "especialidad": {
-            "type": "string",
-            "nullable": true
+          "especialidadId": {
+            "type": "integer",
+            "format": "int32"
           },
-          "eventosPonentes": {
+          "especialidades": {
+            "$ref": "#/components/schemas/Especialidad"
+          },
+          "sesiones": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/EventoPonente"
+              "$ref": "#/components/schemas/Sesion"
             },
             "nullable": true
           }
@@ -2645,11 +3686,15 @@
             "type": "string",
             "nullable": true
           },
-          "espaciosId": {
+          "espacioId": {
             "type": "integer",
             "format": "int32"
           },
-          "eventosId": {
+          "eventoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ponenteId": {
             "type": "integer",
             "format": "int32"
           },
@@ -2658,6 +3703,9 @@
           },
           "espacios": {
             "$ref": "#/components/schemas/Espacio"
+          },
+          "ponentes": {
+            "$ref": "#/components/schemas/Ponente"
           }
         },
         "additionalProperties": false
@@ -2677,6 +3725,27 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Evento"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoInscripcion": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "inscripciones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Inscripcion"
             },
             "nullable": true
           }

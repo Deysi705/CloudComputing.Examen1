@@ -1,9 +1,0 @@
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.csproj.AssemblyReference.cache
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.AssemblyInfoInputs.cache
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.AssemblyInfo.cs
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.csproj.CoreCompileInputs.cache
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.RazorAssemblyInfo.cache
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.RazorAssemblyInfo.cs
-C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.WEB.MVC\obj\Debug\net8.0\CloudComputing.Examen1.WEB.MVC.sourcelink.json

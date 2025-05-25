@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputingExamen1.Models;
+using CloudComputing.Examen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Participantes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Participante>>> GetParticipantes()
+        public async Task<ActionResult<IEnumerable<Participante>>> GetParticipante()
         {
-            return await _context.Participantes.ToListAsync();
+            return await _context.Participante.ToListAsync();
         }
 
         // GET: api/Participantes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Participante>> GetParticipantes(int id)
+        public async Task<ActionResult<Participante>> GetParticipante(int id)
         {
-            var participantes = await _context.Participantes.FindAsync(id);
+            var participante = await _context.Participante.FindAsync(id);
 
-            if (participantes == null)
+            if (participante == null)
             {
                 return NotFound();
             }
 
-            return participantes;
+            return participante;
         }
 
         // PUT: api/Participantes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutParticipantes(int id, Participante participantes)
+        public async Task<IActionResult> PutParticipante(int id, Participante participante)
         {
-            if (id != participantes.Id)
+            if (id != participante.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(participantes).State = EntityState.Modified;
+            _context.Entry(participante).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ParticipantesExists(id))
+                if (!ParticipanteExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Participantes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Participante>> PostParticipantes(Participante participantes)
+        public async Task<ActionResult<Participante>> PostParticipante(Participante participante)
         {
-            _context.Participantes.Add(participantes);
+            _context.Participante.Add(participante);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetParticipantes", new { id = participantes.Id }, participantes);
+            return CreatedAtAction("GetParticipante", new { id = participante.Id }, participante);
         }
 
         // DELETE: api/Participantes/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteParticipantes(int id)
+        public async Task<IActionResult> DeleteParticipante(int id)
         {
-            var participantes = await _context.Participantes.FindAsync(id);
-            if (participantes == null)
+            var participante = await _context.Participante.FindAsync(id);
+            if (participante == null)
             {
                 return NotFound();
             }
 
-            _context.Participantes.Remove(participantes);
+            _context.Participante.Remove(participante);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool ParticipantesExists(int id)
+        private bool ParticipanteExists(int id)
         {
-            return _context.Participantes.Any(e => e.Id == id);
+            return _context.Participante.Any(e => e.Id == id);
         }
     }
 }

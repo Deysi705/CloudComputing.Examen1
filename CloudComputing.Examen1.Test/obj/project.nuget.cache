@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IaY/t3USN4A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\Examen\\CloudComputing.Examen1.API\\CloudComputing.Examen1.Test\\CloudComputing.Examen1.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\deysi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

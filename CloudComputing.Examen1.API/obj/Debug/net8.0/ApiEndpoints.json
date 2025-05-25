@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.CertificadosController",
-    "Method": "GetCertificados",
+    "Method": "GetCertificado",
     "RelativePath": "api/Certificados",
     "HttpMethod": "GET",
     "IsController": true,
@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Certificado, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Certificado, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -21,21 +21,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.CertificadosController",
-    "Method": "PostCertificados",
+    "Method": "PostCertificado",
     "RelativePath": "api/Certificados",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "certificados",
-        "Type": "CloudComputingExamen1.Models.Certificado",
+        "Name": "certificado",
+        "Type": "CloudComputing.Examen1.Models.Certificado",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Certificado",
+        "Type": "CloudComputing.Examen1.Models.Certificado",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -47,7 +47,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.CertificadosController",
-    "Method": "GetCertificados",
+    "Method": "GetCertificado",
     "RelativePath": "api/Certificados/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Certificado",
+        "Type": "CloudComputing.Examen1.Models.Certificado",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.CertificadosController",
-    "Method": "PutCertificados",
+    "Method": "PutCertificado",
     "RelativePath": "api/Certificados/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -85,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "certificados",
-        "Type": "CloudComputingExamen1.Models.Certificado",
+        "Name": "certificado",
+        "Type": "CloudComputing.Examen1.Models.Certificado",
         "IsRequired": true
       }
     ],
@@ -94,7 +94,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.CertificadosController",
-    "Method": "DeleteCertificados",
+    "Method": "DeleteCertificado",
     "RelativePath": "api/Certificados/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -110,7 +110,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EspaciosController",
-    "Method": "GetEspacios",
+    "Method": "GetEspacio",
     "RelativePath": "api/Espacios",
     "HttpMethod": "GET",
     "IsController": true,
@@ -118,7 +118,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Espacio, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Espacio, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -130,21 +130,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EspaciosController",
-    "Method": "PostEspacios",
+    "Method": "PostEspacio",
     "RelativePath": "api/Espacios",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "espacios",
-        "Type": "CloudComputingExamen1.Models.Espacio",
+        "Name": "espacio",
+        "Type": "CloudComputing.Examen1.Models.Espacio",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Espacio",
+        "Type": "CloudComputing.Examen1.Models.Espacio",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -156,7 +156,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EspaciosController",
-    "Method": "GetEspacios",
+    "Method": "GetEspacio",
     "RelativePath": "api/Espacios/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -170,7 +170,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Espacio",
+        "Type": "CloudComputing.Examen1.Models.Espacio",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -182,7 +182,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EspaciosController",
-    "Method": "PutEspacios",
+    "Method": "PutEspacio",
     "RelativePath": "api/Espacios/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -194,8 +194,8 @@
         "IsRequired": true
       },
       {
-        "Name": "espacios",
-        "Type": "CloudComputingExamen1.Models.Espacio",
+        "Name": "espacio",
+        "Type": "CloudComputing.Examen1.Models.Espacio",
         "IsRequired": true
       }
     ],
@@ -203,7 +203,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EspaciosController",
-    "Method": "DeleteEspacios",
+    "Method": "DeleteEspacio",
     "RelativePath": "api/Espacios/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -218,16 +218,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.EventoPonentesController",
-    "Method": "GetEventosPonentes",
-    "RelativePath": "api/EventoPonentes",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EspecialidadesController",
+    "Method": "GetEspecialidad",
+    "RelativePath": "api/Especialidades",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.EventoPonente, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Especialidad, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -238,22 +238,22 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.EventoPonentesController",
-    "Method": "PostEventosPonentes",
-    "RelativePath": "api/EventoPonentes",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EspecialidadesController",
+    "Method": "PostEspecialidad",
+    "RelativePath": "api/Especialidades",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "eventosPonentes",
-        "Type": "CloudComputingExamen1.Models.EventoPonente",
+        "Name": "especialidad",
+        "Type": "CloudComputing.Examen1.Models.Especialidad",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.EventoPonente",
+        "Type": "CloudComputing.Examen1.Models.Especialidad",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -264,9 +264,9 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.EventoPonentesController",
-    "Method": "GetEventosPonentes",
-    "RelativePath": "api/EventoPonentes/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EspecialidadesController",
+    "Method": "GetEspecialidad",
+    "RelativePath": "api/Especialidades/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -279,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.EventoPonente",
+        "Type": "CloudComputing.Examen1.Models.Especialidad",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -290,9 +290,9 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.EventoPonentesController",
-    "Method": "PutEventosPonentes",
-    "RelativePath": "api/EventoPonentes/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EspecialidadesController",
+    "Method": "PutEspecialidad",
+    "RelativePath": "api/Especialidades/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -303,17 +303,344 @@
         "IsRequired": true
       },
       {
-        "Name": "eventosPonentes",
-        "Type": "CloudComputingExamen1.Models.EventoPonente",
+        "Name": "especialidad",
+        "Type": "CloudComputing.Examen1.Models.Especialidad",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.EventoPonentesController",
-    "Method": "DeleteEventosPonentes",
-    "RelativePath": "api/EventoPonentes/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EspecialidadesController",
+    "Method": "DeleteEspecialidad",
+    "RelativePath": "api/Especialidades/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoCertificadosController",
+    "Method": "GetEstadoCertificado",
+    "RelativePath": "api/EstadoCertificados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.EstadoCertificado, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoCertificadosController",
+    "Method": "PostEstadoCertificado",
+    "RelativePath": "api/EstadoCertificados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoCertificado",
+        "Type": "CloudComputing.Examen1.Models.EstadoCertificado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoCertificado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoCertificadosController",
+    "Method": "GetEstadoCertificado",
+    "RelativePath": "api/EstadoCertificados/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoCertificado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoCertificadosController",
+    "Method": "PutEstadoCertificado",
+    "RelativePath": "api/EstadoCertificados/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estadoCertificado",
+        "Type": "CloudComputing.Examen1.Models.EstadoCertificado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoCertificadosController",
+    "Method": "DeleteEstadoCertificado",
+    "RelativePath": "api/EstadoCertificados/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoInscripcionesController",
+    "Method": "GetEstadoInscripcion",
+    "RelativePath": "api/EstadoInscripciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.EstadoInscripcion, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoInscripcionesController",
+    "Method": "PostEstadoInscripcion",
+    "RelativePath": "api/EstadoInscripciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoInscripcion",
+        "Type": "CloudComputing.Examen1.Models.EstadoInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoInscripcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoInscripcionesController",
+    "Method": "GetEstadoInscripcion",
+    "RelativePath": "api/EstadoInscripciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoInscripcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoInscripcionesController",
+    "Method": "PutEstadoInscripcion",
+    "RelativePath": "api/EstadoInscripciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estadoInscripcion",
+        "Type": "CloudComputing.Examen1.Models.EstadoInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoInscripcionesController",
+    "Method": "DeleteEstadoInscripcion",
+    "RelativePath": "api/EstadoInscripciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoPagosController",
+    "Method": "GetEstadoPago",
+    "RelativePath": "api/EstadoPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.EstadoPago, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoPagosController",
+    "Method": "PostEstadoPago",
+    "RelativePath": "api/EstadoPagos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estadoPago",
+        "Type": "CloudComputing.Examen1.Models.EstadoPago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoPago",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoPagosController",
+    "Method": "GetEstadoPago",
+    "RelativePath": "api/EstadoPagos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.EstadoPago",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoPagosController",
+    "Method": "PutEstadoPago",
+    "RelativePath": "api/EstadoPagos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estadoPago",
+        "Type": "CloudComputing.Examen1.Models.EstadoPago",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.EstadoPagosController",
+    "Method": "DeleteEstadoPago",
+    "RelativePath": "api/EstadoPagos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -328,7 +655,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EventosController",
-    "Method": "GetEventos",
+    "Method": "GetEvento",
     "RelativePath": "api/Eventos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -336,7 +663,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Evento, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Evento, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -348,21 +675,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EventosController",
-    "Method": "PostEventos",
+    "Method": "PostEvento",
     "RelativePath": "api/Eventos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "eventos",
-        "Type": "CloudComputingExamen1.Models.Evento",
+        "Name": "evento",
+        "Type": "CloudComputing.Examen1.Models.Evento",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Evento",
+        "Type": "CloudComputing.Examen1.Models.Evento",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -374,7 +701,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EventosController",
-    "Method": "GetEventos",
+    "Method": "GetEvento",
     "RelativePath": "api/Eventos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -388,7 +715,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Evento",
+        "Type": "CloudComputing.Examen1.Models.Evento",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -400,7 +727,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EventosController",
-    "Method": "PutEventos",
+    "Method": "PutEvento",
     "RelativePath": "api/Eventos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -412,8 +739,8 @@
         "IsRequired": true
       },
       {
-        "Name": "eventos",
-        "Type": "CloudComputingExamen1.Models.Evento",
+        "Name": "evento",
+        "Type": "CloudComputing.Examen1.Models.Evento",
         "IsRequired": true
       }
     ],
@@ -421,7 +748,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.EventosController",
-    "Method": "DeleteEventos",
+    "Method": "DeleteEvento",
     "RelativePath": "api/Eventos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -436,16 +763,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistoricoCertificadosController",
-    "Method": "GetHistoricoCertificados",
-    "RelativePath": "api/HistoricoCertificados",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistorialCertificadosController",
+    "Method": "GetHistorialCertificado",
+    "RelativePath": "api/HistorialCertificados",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.HistoricoCertificado, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.HistorialCertificado, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -456,22 +783,22 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistoricoCertificadosController",
-    "Method": "PostHistoricoCertificados",
-    "RelativePath": "api/HistoricoCertificados",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistorialCertificadosController",
+    "Method": "PostHistorialCertificado",
+    "RelativePath": "api/HistorialCertificados",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "historicoCertificados",
-        "Type": "CloudComputingExamen1.Models.HistoricoCertificado",
+        "Name": "historialCertificado",
+        "Type": "CloudComputing.Examen1.Models.HistorialCertificado",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.HistoricoCertificado",
+        "Type": "CloudComputing.Examen1.Models.HistorialCertificado",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -482,9 +809,9 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistoricoCertificadosController",
-    "Method": "GetHistoricoCertificados",
-    "RelativePath": "api/HistoricoCertificados/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistorialCertificadosController",
+    "Method": "GetHistorialCertificado",
+    "RelativePath": "api/HistorialCertificados/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -497,7 +824,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.HistoricoCertificado",
+        "Type": "CloudComputing.Examen1.Models.HistorialCertificado",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -508,9 +835,9 @@
     ]
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistoricoCertificadosController",
-    "Method": "PutHistoricoCertificados",
-    "RelativePath": "api/HistoricoCertificados/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistorialCertificadosController",
+    "Method": "PutHistorialCertificado",
+    "RelativePath": "api/HistorialCertificados/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -521,17 +848,17 @@
         "IsRequired": true
       },
       {
-        "Name": "historicoCertificados",
-        "Type": "CloudComputingExamen1.Models.HistoricoCertificado",
+        "Name": "historialCertificado",
+        "Type": "CloudComputing.Examen1.Models.HistorialCertificado",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistoricoCertificadosController",
-    "Method": "DeleteHistoricoCertificados",
-    "RelativePath": "api/HistoricoCertificados/{id}",
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.HistorialCertificadosController",
+    "Method": "DeleteHistorialCertificado",
+    "RelativePath": "api/HistorialCertificados/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -546,7 +873,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.InscripcionesController",
-    "Method": "GetInscripciones",
+    "Method": "GetInscripcion",
     "RelativePath": "api/Inscripciones",
     "HttpMethod": "GET",
     "IsController": true,
@@ -554,7 +881,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Inscripcion, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Inscripcion, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -566,21 +893,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.InscripcionesController",
-    "Method": "PostInscripciones",
+    "Method": "PostInscripcion",
     "RelativePath": "api/Inscripciones",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "inscripciones",
-        "Type": "CloudComputingExamen1.Models.Inscripcion",
+        "Name": "inscripcion",
+        "Type": "CloudComputing.Examen1.Models.Inscripcion",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Inscripcion",
+        "Type": "CloudComputing.Examen1.Models.Inscripcion",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -592,7 +919,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.InscripcionesController",
-    "Method": "GetInscripciones",
+    "Method": "GetInscripcion",
     "RelativePath": "api/Inscripciones/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -606,7 +933,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Inscripcion",
+        "Type": "CloudComputing.Examen1.Models.Inscripcion",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -618,7 +945,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.InscripcionesController",
-    "Method": "PutInscripciones",
+    "Method": "PutInscripcion",
     "RelativePath": "api/Inscripciones/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -630,8 +957,8 @@
         "IsRequired": true
       },
       {
-        "Name": "inscripciones",
-        "Type": "CloudComputingExamen1.Models.Inscripcion",
+        "Name": "inscripcion",
+        "Type": "CloudComputing.Examen1.Models.Inscripcion",
         "IsRequired": true
       }
     ],
@@ -639,7 +966,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.InscripcionesController",
-    "Method": "DeleteInscripciones",
+    "Method": "DeleteInscripcion",
     "RelativePath": "api/Inscripciones/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -654,8 +981,117 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.InstitucionesController",
+    "Method": "GetInstitucion",
+    "RelativePath": "api/Instituciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Institucion, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.InstitucionesController",
+    "Method": "PostInstitucion",
+    "RelativePath": "api/Instituciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "institucion",
+        "Type": "CloudComputing.Examen1.Models.Institucion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.Institucion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.InstitucionesController",
+    "Method": "GetInstitucion",
+    "RelativePath": "api/Instituciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.Institucion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.InstitucionesController",
+    "Method": "PutInstitucion",
+    "RelativePath": "api/Instituciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "institucion",
+        "Type": "CloudComputing.Examen1.Models.Institucion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.InstitucionesController",
+    "Method": "DeleteInstitucion",
+    "RelativePath": "api/Instituciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.MedioPagosController",
-    "Method": "GetMediosPagos",
+    "Method": "GetMedioPago",
     "RelativePath": "api/MedioPagos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -663,7 +1099,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.MedioPago, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.MedioPago, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -675,21 +1111,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.MedioPagosController",
-    "Method": "PostMediosPagos",
+    "Method": "PostMedioPago",
     "RelativePath": "api/MedioPagos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "mediosPagos",
-        "Type": "CloudComputingExamen1.Models.MedioPago",
+        "Name": "medioPago",
+        "Type": "CloudComputing.Examen1.Models.MedioPago",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.MedioPago",
+        "Type": "CloudComputing.Examen1.Models.MedioPago",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -701,7 +1137,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.MedioPagosController",
-    "Method": "GetMediosPagos",
+    "Method": "GetMedioPago",
     "RelativePath": "api/MedioPagos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -715,7 +1151,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.MedioPago",
+        "Type": "CloudComputing.Examen1.Models.MedioPago",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -727,7 +1163,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.MedioPagosController",
-    "Method": "PutMediosPagos",
+    "Method": "PutMedioPago",
     "RelativePath": "api/MedioPagos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -739,8 +1175,8 @@
         "IsRequired": true
       },
       {
-        "Name": "mediosPagos",
-        "Type": "CloudComputingExamen1.Models.MedioPago",
+        "Name": "medioPago",
+        "Type": "CloudComputing.Examen1.Models.MedioPago",
         "IsRequired": true
       }
     ],
@@ -748,7 +1184,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.MedioPagosController",
-    "Method": "DeleteMediosPagos",
+    "Method": "DeleteMedioPago",
     "RelativePath": "api/MedioPagos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -764,7 +1200,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PagosController",
-    "Method": "GetPagos",
+    "Method": "GetPago",
     "RelativePath": "api/Pagos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -772,7 +1208,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Pago, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Pago, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -784,21 +1220,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PagosController",
-    "Method": "PostPagos",
+    "Method": "PostPago",
     "RelativePath": "api/Pagos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pagos",
-        "Type": "CloudComputingExamen1.Models.Pago",
+        "Name": "pago",
+        "Type": "CloudComputing.Examen1.Models.Pago",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Pago",
+        "Type": "CloudComputing.Examen1.Models.Pago",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -810,7 +1246,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PagosController",
-    "Method": "GetPagos",
+    "Method": "GetPago",
     "RelativePath": "api/Pagos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -824,7 +1260,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Pago",
+        "Type": "CloudComputing.Examen1.Models.Pago",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -836,7 +1272,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PagosController",
-    "Method": "PutPagos",
+    "Method": "PutPago",
     "RelativePath": "api/Pagos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -848,8 +1284,8 @@
         "IsRequired": true
       },
       {
-        "Name": "pagos",
-        "Type": "CloudComputingExamen1.Models.Pago",
+        "Name": "pago",
+        "Type": "CloudComputing.Examen1.Models.Pago",
         "IsRequired": true
       }
     ],
@@ -857,7 +1293,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PagosController",
-    "Method": "DeletePagos",
+    "Method": "DeletePago",
     "RelativePath": "api/Pagos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -873,7 +1309,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.ParticipantesController",
-    "Method": "GetParticipantes",
+    "Method": "GetParticipante",
     "RelativePath": "api/Participantes",
     "HttpMethod": "GET",
     "IsController": true,
@@ -881,7 +1317,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Participante, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Participante, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -893,21 +1329,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.ParticipantesController",
-    "Method": "PostParticipantes",
+    "Method": "PostParticipante",
     "RelativePath": "api/Participantes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "participantes",
-        "Type": "CloudComputingExamen1.Models.Participante",
+        "Name": "participante",
+        "Type": "CloudComputing.Examen1.Models.Participante",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Participante",
+        "Type": "CloudComputing.Examen1.Models.Participante",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -919,7 +1355,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.ParticipantesController",
-    "Method": "GetParticipantes",
+    "Method": "GetParticipante",
     "RelativePath": "api/Participantes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -933,7 +1369,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Participante",
+        "Type": "CloudComputing.Examen1.Models.Participante",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -945,7 +1381,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.ParticipantesController",
-    "Method": "PutParticipantes",
+    "Method": "PutParticipante",
     "RelativePath": "api/Participantes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -957,8 +1393,8 @@
         "IsRequired": true
       },
       {
-        "Name": "participantes",
-        "Type": "CloudComputingExamen1.Models.Participante",
+        "Name": "participante",
+        "Type": "CloudComputing.Examen1.Models.Participante",
         "IsRequired": true
       }
     ],
@@ -966,7 +1402,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.ParticipantesController",
-    "Method": "DeleteParticipantes",
+    "Method": "DeleteParticipante",
     "RelativePath": "api/Participantes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -982,7 +1418,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PonentesController",
-    "Method": "GetPonentes",
+    "Method": "GetPonente",
     "RelativePath": "api/Ponentes",
     "HttpMethod": "GET",
     "IsController": true,
@@ -990,7 +1426,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Ponente, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Ponente, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1002,21 +1438,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PonentesController",
-    "Method": "PostPonentes",
+    "Method": "PostPonente",
     "RelativePath": "api/Ponentes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ponentes",
-        "Type": "CloudComputingExamen1.Models.Ponente",
+        "Name": "ponente",
+        "Type": "CloudComputing.Examen1.Models.Ponente",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Ponente",
+        "Type": "CloudComputing.Examen1.Models.Ponente",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1028,7 +1464,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PonentesController",
-    "Method": "GetPonentes",
+    "Method": "GetPonente",
     "RelativePath": "api/Ponentes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1042,7 +1478,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Ponente",
+        "Type": "CloudComputing.Examen1.Models.Ponente",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1054,7 +1490,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PonentesController",
-    "Method": "PutPonentes",
+    "Method": "PutPonente",
     "RelativePath": "api/Ponentes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -1066,8 +1502,8 @@
         "IsRequired": true
       },
       {
-        "Name": "ponentes",
-        "Type": "CloudComputingExamen1.Models.Ponente",
+        "Name": "ponente",
+        "Type": "CloudComputing.Examen1.Models.Ponente",
         "IsRequired": true
       }
     ],
@@ -1075,7 +1511,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.PonentesController",
-    "Method": "DeletePonentes",
+    "Method": "DeletePonente",
     "RelativePath": "api/Ponentes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -1091,7 +1527,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.SesionesController",
-    "Method": "GetSesiones",
+    "Method": "GetSesion",
     "RelativePath": "api/Sesiones",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1099,7 +1535,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.Sesion, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.Sesion, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1111,21 +1547,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.SesionesController",
-    "Method": "PostSesiones",
+    "Method": "PostSesion",
     "RelativePath": "api/Sesiones",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "sesiones",
-        "Type": "CloudComputingExamen1.Models.Sesion",
+        "Name": "sesion",
+        "Type": "CloudComputing.Examen1.Models.Sesion",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Sesion",
+        "Type": "CloudComputing.Examen1.Models.Sesion",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1137,7 +1573,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.SesionesController",
-    "Method": "GetSesiones",
+    "Method": "GetSesion",
     "RelativePath": "api/Sesiones/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1151,7 +1587,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.Sesion",
+        "Type": "CloudComputing.Examen1.Models.Sesion",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1163,7 +1599,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.SesionesController",
-    "Method": "PutSesiones",
+    "Method": "PutSesion",
     "RelativePath": "api/Sesiones/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -1175,8 +1611,8 @@
         "IsRequired": true
       },
       {
-        "Name": "sesiones",
-        "Type": "CloudComputingExamen1.Models.Sesion",
+        "Name": "sesion",
+        "Type": "CloudComputing.Examen1.Models.Sesion",
         "IsRequired": true
       }
     ],
@@ -1184,7 +1620,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.SesionesController",
-    "Method": "DeleteSesiones",
+    "Method": "DeleteSesion",
     "RelativePath": "api/Sesiones/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -1200,7 +1636,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoEventosController",
-    "Method": "GetTipoEventos",
+    "Method": "GetTipoEvento",
     "RelativePath": "api/TipoEventos",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1208,7 +1644,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputingExamen1.Models.TipoEvento, CloudComputing.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.TipoEvento, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1220,21 +1656,21 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoEventosController",
-    "Method": "PostTipoEventos",
+    "Method": "PostTipoEvento",
     "RelativePath": "api/TipoEventos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "tipoEventos",
-        "Type": "CloudComputingExamen1.Models.TipoEvento",
+        "Name": "tipoEvento",
+        "Type": "CloudComputing.Examen1.Models.TipoEvento",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.TipoEvento",
+        "Type": "CloudComputing.Examen1.Models.TipoEvento",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1246,7 +1682,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoEventosController",
-    "Method": "GetTipoEventos",
+    "Method": "GetTipoEvento",
     "RelativePath": "api/TipoEventos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -1260,7 +1696,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CloudComputingExamen1.Models.TipoEvento",
+        "Type": "CloudComputing.Examen1.Models.TipoEvento",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1272,7 +1708,7 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoEventosController",
-    "Method": "PutTipoEventos",
+    "Method": "PutTipoEvento",
     "RelativePath": "api/TipoEventos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -1284,8 +1720,8 @@
         "IsRequired": true
       },
       {
-        "Name": "tipoEventos",
-        "Type": "CloudComputingExamen1.Models.TipoEvento",
+        "Name": "tipoEvento",
+        "Type": "CloudComputing.Examen1.Models.TipoEvento",
         "IsRequired": true
       }
     ],
@@ -1293,8 +1729,117 @@
   },
   {
     "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoEventosController",
-    "Method": "DeleteTipoEventos",
+    "Method": "DeleteTipoEvento",
     "RelativePath": "api/TipoEventos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoInscripcionesController",
+    "Method": "GetTipoInscripcion",
+    "RelativePath": "api/TipoInscripciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CloudComputing.Examen1.Models.TipoInscripcion, CloudComputing.Examen1.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoInscripcionesController",
+    "Method": "PostTipoInscripcion",
+    "RelativePath": "api/TipoInscripciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoInscripcion",
+        "Type": "CloudComputing.Examen1.Models.TipoInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.TipoInscripcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoInscripcionesController",
+    "Method": "GetTipoInscripcion",
+    "RelativePath": "api/TipoInscripciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CloudComputing.Examen1.Models.TipoInscripcion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoInscripcionesController",
+    "Method": "PutTipoInscripcion",
+    "RelativePath": "api/TipoInscripciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tipoInscripcion",
+        "Type": "CloudComputing.Examen1.Models.TipoInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CloudComputing.Examen1.API.Controllers.TipoInscripcionesController",
+    "Method": "DeleteTipoInscripcion",
+    "RelativePath": "api/TipoInscripciones/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

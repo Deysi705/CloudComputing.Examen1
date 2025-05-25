@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudComputing.Examen1.API.Consumer\CloudComputing.Examen1.API.Consumer.csproj" />
+    <ProjectReference Include="..\CloudComputing.Examen1.Models\CloudComputing.Examen1.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Certificados\" />
+    <Folder Include="Views\Espacios\" />
+    <Folder Include="Views\Especialidades\" />
+    <Folder Include="Views\EstadoCertificados\" />
+    <Folder Include="Views\EstadoInscripciones\" />
+    <Folder Include="Views\EstadoPagos\" />
+    <Folder Include="Views\Eventos\" />
+    <Folder Include="Views\HistorialCertificados\" />
+    <Folder Include="Views\Inscripciones\" />
+    <Folder Include="Views\Instituciones\" />
+    <Folder Include="Views\MedioPagos\" />
+    <Folder Include="Views\TipoInscripciones\" />
+    <Folder Include="Views\TipoEventos\" />
+    <Folder Include="Views\Sesiones\" />
+    <Folder Include="Views\Ponentes\" />
+    <Folder Include="Views\Participantes\" />
+    <Folder Include="Views\Pagos\" />
+  </ItemGroup>
+
+</Project>

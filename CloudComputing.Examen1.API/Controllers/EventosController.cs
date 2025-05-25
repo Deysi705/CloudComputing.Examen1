@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputingExamen1.Models;
+using CloudComputing.Examen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Eventos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Evento>>> GetEventos()
+        public async Task<ActionResult<IEnumerable<Evento>>> GetEvento()
         {
-            return await _context.Eventos.ToListAsync();
+            return await _context.Evento.ToListAsync();
         }
 
         // GET: api/Eventos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Evento>> GetEventos(int id)
+        public async Task<ActionResult<Evento>> GetEvento(int id)
         {
-            var eventos = await _context.Eventos.FindAsync(id);
+            var evento = await _context.Evento.FindAsync(id);
 
-            if (eventos == null)
+            if (evento == null)
             {
                 return NotFound();
             }
 
-            return eventos;
+            return evento;
         }
 
         // PUT: api/Eventos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEventos(int id, Evento eventos)
+        public async Task<IActionResult> PutEvento(int id, Evento evento)
         {
-            if (id != eventos.Id)
+            if (id != evento.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(eventos).State = EntityState.Modified;
+            _context.Entry(evento).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!EventosExists(id))
+                if (!EventoExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Eventos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Evento>> PostEventos(Evento eventos)
+        public async Task<ActionResult<Evento>> PostEvento(Evento evento)
         {
-            _context.Eventos.Add(eventos);
+            _context.Evento.Add(evento);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetEventos", new { id = eventos.Id }, eventos);
+            return CreatedAtAction("GetEvento", new { id = evento.Id }, evento);
         }
 
         // DELETE: api/Eventos/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEventos(int id)
+        public async Task<IActionResult> DeleteEvento(int id)
         {
-            var eventos = await _context.Eventos.FindAsync(id);
-            if (eventos == null)
+            var evento = await _context.Evento.FindAsync(id);
+            if (evento == null)
             {
                 return NotFound();
             }
 
-            _context.Eventos.Remove(eventos);
+            _context.Evento.Remove(evento);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool EventosExists(int id)
+        private bool EventoExists(int id)
         {
-            return _context.Eventos.Any(e => e.Id == id);
+            return _context.Evento.Any(e => e.Id == id);
         }
     }
 }
