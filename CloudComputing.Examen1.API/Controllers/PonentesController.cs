@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputing.Examen1.Models;
+using CloudComputingExamen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Ponentes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Ponente>>> GetPonente()
+        public async Task<ActionResult<IEnumerable<Ponente>>> GetPonentes()
         {
-            return await _context.Ponente.ToListAsync();
+            return await _context.Ponentes.ToListAsync();
         }
 
         // GET: api/Ponentes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Ponente>> GetPonente(int id)
+        public async Task<ActionResult<Ponente>> GetPonentes(int id)
         {
-            var ponente = await _context.Ponente.FindAsync(id);
+            var ponentes = await _context.Ponentes.FindAsync(id);
 
-            if (ponente == null)
+            if (ponentes == null)
             {
                 return NotFound();
             }
 
-            return ponente;
+            return ponentes;
         }
 
         // PUT: api/Ponentes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutPonente(int id, Ponente ponente)
+        public async Task<IActionResult> PutPonentes(int id, Ponente ponentes)
         {
-            if (id != ponente.Id)
+            if (id != ponentes.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(ponente).State = EntityState.Modified;
+            _context.Entry(ponentes).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PonenteExists(id))
+                if (!PonentesExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Ponentes
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Ponente>> PostPonente(Ponente ponente)
+        public async Task<ActionResult<Ponente>> PostPonentes(Ponente ponentes)
         {
-            _context.Ponente.Add(ponente);
+            _context.Ponentes.Add(ponentes);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPonente", new { id = ponente.Id }, ponente);
+            return CreatedAtAction("GetPonentes", new { id = ponentes.Id }, ponentes);
         }
 
         // DELETE: api/Ponentes/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePonente(int id)
+        public async Task<IActionResult> DeletePonentes(int id)
         {
-            var ponente = await _context.Ponente.FindAsync(id);
-            if (ponente == null)
+            var ponentes = await _context.Ponentes.FindAsync(id);
+            if (ponentes == null)
             {
                 return NotFound();
             }
 
-            _context.Ponente.Remove(ponente);
+            _context.Ponentes.Remove(ponentes);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PonenteExists(int id)
+        private bool PonentesExists(int id)
         {
-            return _context.Ponente.Any(e => e.Id == id);
+            return _context.Ponentes.Any(e => e.Id == id);
         }
     }
 }

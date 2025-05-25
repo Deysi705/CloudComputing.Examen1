@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputing.Examen1.Models;
+using CloudComputingExamen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -21,38 +21,38 @@ namespace CloudComputing.Examen1.API.Controllers
             _context = context;
         }
 
-        // GET: api/MedioPagos
+        // GET: api/MediosPagos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<MedioPago>>> GetMedioPago()
+        public async Task<ActionResult<IEnumerable<MedioPago>>> GetMediosPagos()
         {
-            return await _context.MedioPago.ToListAsync();
+            return await _context.MediosPagos.ToListAsync();
         }
 
-        // GET: api/MedioPagos/5
+        // GET: api/MediosPagos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<MedioPago>> GetMedioPago(int id)
+        public async Task<ActionResult<MedioPago>> GetMediosPagos(int id)
         {
-            var medioPago = await _context.MedioPago.FindAsync(id);
+            var mediosPagos = await _context.MediosPagos.FindAsync(id);
 
-            if (medioPago == null)
+            if (mediosPagos == null)
             {
                 return NotFound();
             }
 
-            return medioPago;
+            return mediosPagos;
         }
 
-        // PUT: api/MedioPagos/5
+        // PUT: api/MediosPagos/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMedioPago(int id, MedioPago medioPago)
+        public async Task<IActionResult> PutMediosPagos(int id, MedioPago mediosPagos)
         {
-            if (id != medioPago.Id)
+            if (id != mediosPagos.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(medioPago).State = EntityState.Modified;
+            _context.Entry(mediosPagos).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!MedioPagoExists(id))
+                if (!MediosPagosExists(id))
                 {
                     return NotFound();
                 }
@@ -73,36 +73,36 @@ namespace CloudComputing.Examen1.API.Controllers
             return NoContent();
         }
 
-        // POST: api/MedioPagos
+        // POST: api/MediosPagos
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<MedioPago>> PostMedioPago(MedioPago medioPago)
+        public async Task<ActionResult<MedioPago>> PostMediosPagos(MedioPago mediosPagos)
         {
-            _context.MedioPago.Add(medioPago);
+            _context.MediosPagos.Add(mediosPagos);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMedioPago", new { id = medioPago.Id }, medioPago);
+            return CreatedAtAction("GetMediosPagos", new { id = mediosPagos.Id }, mediosPagos);
         }
 
-        // DELETE: api/MedioPagos/5
+        // DELETE: api/MediosPagos/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteMedioPago(int id)
+        public async Task<IActionResult> DeleteMediosPagos(int id)
         {
-            var medioPago = await _context.MedioPago.FindAsync(id);
-            if (medioPago == null)
+            var mediosPagos = await _context.MediosPagos.FindAsync(id);
+            if (mediosPagos == null)
             {
                 return NotFound();
             }
 
-            _context.MedioPago.Remove(medioPago);
+            _context.MediosPagos.Remove(mediosPagos);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool MedioPagoExists(int id)
+        private bool MediosPagosExists(int id)
         {
-            return _context.MedioPago.Any(e => e.Id == id);
+            return _context.MediosPagos.Any(e => e.Id == id);
         }
     }
 }

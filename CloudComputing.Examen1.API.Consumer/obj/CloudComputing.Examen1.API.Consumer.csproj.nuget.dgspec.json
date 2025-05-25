@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj": {}
+    "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Clases\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj": {
+    "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Clases\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj",
+        "projectUniqueName": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Clases\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj",
         "projectName": "CloudComputing.Examen1.API.Consumer",
-        "projectPath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj",
+        "projectPath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Clases\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj",
         "packagesPath": "C:\\Users\\deysi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\obj\\",
+        "outputPath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Clases\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,32 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.15, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

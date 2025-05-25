@@ -1,0 +1,15 @@
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\bin\Debug\net8.0\CloudComputing.Models.deps.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\bin\Debug\net8.0\CloudComputing.Models.runtimeconfig.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\bin\Debug\net8.0\CloudComputing.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\bin\Debug\net8.0\CloudComputing.Models.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.csproj.AssemblyReference.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.AssemblyInfoInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.AssemblyInfo.cs
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.csproj.CoreCompileInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\refint\CloudComputing.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.genruntimeconfig.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\ref\CloudComputing.Models.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Models\obj\Debug\net8.0\CloudComputing.Models.sourcelink.json

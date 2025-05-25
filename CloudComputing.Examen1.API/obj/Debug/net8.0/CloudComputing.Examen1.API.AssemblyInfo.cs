@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudComputing.Examen1.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c866b88906fba3f9ca398b5f1528be66d55e7eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+141b1b11897f3a4abf7c15ce70bec02b4b4a29d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudComputing.Examen1.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudComputing.Examen1.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

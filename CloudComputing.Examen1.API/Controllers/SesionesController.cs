@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputing.Examen1.Models;
+using CloudComputingExamen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Sesiones
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Sesion>>> GetSesion()
+        public async Task<ActionResult<IEnumerable<Sesion>>> GetSesiones()
         {
-            return await _context.Sesion.ToListAsync();
+            return await _context.Sesiones.ToListAsync();
         }
 
         // GET: api/Sesiones/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Sesion>> GetSesion(int id)
+        public async Task<ActionResult<Sesion>> GetSesiones(int id)
         {
-            var sesion = await _context.Sesion.FindAsync(id);
+            var sesiones = await _context.Sesiones.FindAsync(id);
 
-            if (sesion == null)
+            if (sesiones == null)
             {
                 return NotFound();
             }
 
-            return sesion;
+            return sesiones;
         }
 
         // PUT: api/Sesiones/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSesion(int id, Sesion sesion)
+        public async Task<IActionResult> PutSesiones(int id, Sesion sesiones)
         {
-            if (id != sesion.Id)
+            if (id != sesiones.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(sesion).State = EntityState.Modified;
+            _context.Entry(sesiones).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SesionExists(id))
+                if (!SesionesExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Sesiones
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Sesion>> PostSesion(Sesion sesion)
+        public async Task<ActionResult<Sesion>> PostSesiones(Sesion sesiones)
         {
-            _context.Sesion.Add(sesion);
+            _context.Sesiones.Add(sesiones);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSesion", new { id = sesion.Id }, sesion);
+            return CreatedAtAction("GetSesiones", new { id = sesiones.Id }, sesiones);
         }
 
         // DELETE: api/Sesiones/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSesion(int id)
+        public async Task<IActionResult> DeleteSesiones(int id)
         {
-            var sesion = await _context.Sesion.FindAsync(id);
-            if (sesion == null)
+            var sesiones = await _context.Sesiones.FindAsync(id);
+            if (sesiones == null)
             {
                 return NotFound();
             }
 
-            _context.Sesion.Remove(sesion);
+            _context.Sesiones.Remove(sesiones);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool SesionExists(int id)
+        private bool SesionesExists(int id)
         {
-            return _context.Sesion.Any(e => e.Id == id);
+            return _context.Sesiones.Any(e => e.Id == id);
         }
     }
 }

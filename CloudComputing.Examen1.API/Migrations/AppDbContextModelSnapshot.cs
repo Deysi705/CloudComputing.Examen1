@@ -22,7 +22,7 @@ namespace CloudComputing.Examen1.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Certificado", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Certificados", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,18 +34,15 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EstadoCertificadoId")
-                        .HasColumnType("int");
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EventoId")
+                    b.Property<int>("EventosId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaEmision")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UrlPdf")
                         .IsRequired()
@@ -53,14 +50,12 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoCertificadoId");
+                    b.HasIndex("EventosId");
 
-                    b.HasIndex("EventoId");
-
-                    b.ToTable("Certificado");
+                    b.ToTable("Certificados");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Espacio", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Espacios", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -81,10 +76,10 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Espacio");
+                    b.ToTable("Espacios");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Especialidad", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Eventos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -92,73 +87,9 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Nombre")
+                    b.Property<string>("Codigo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Especialidad");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoCertificado", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("EstadoCertificado");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoInscripcion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("EstadoInscripcion");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoPago", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("EstadoPago");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Evento", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
@@ -178,6 +109,9 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PonentesId")
+                        .HasColumnType("int");
+
                     b.Property<int>("TipoEventosId")
                         .HasColumnType("int");
 
@@ -185,10 +119,10 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasIndex("TipoEventosId");
 
-                    b.ToTable("Evento");
+                    b.ToTable("Eventos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.HistorialCertificado", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.EventosPonentes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -196,24 +130,22 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CertificadoId")
+                    b.Property<int>("EventosId")
                         .HasColumnType("int");
 
-                    b.Property<int>("EventoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PagoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ParticipanteId")
+                    b.Property<int>("PonentesId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("HistorialCertificado");
+                    b.HasIndex("EventosId");
+
+                    b.HasIndex("PonentesId");
+
+                    b.ToTable("EventosPonentes");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Inscripcion", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.HistoricoCertificados", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -221,64 +153,59 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("EstadoInscripcionId")
+                    b.Property<int>("Certificado")
                         .HasColumnType("int");
 
-                    b.Property<int>("EventoId")
+                    b.Property<int>("Evento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventosId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pago")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Participante")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EventosId");
+
+                    b.ToTable("HistoricoCertificados");
+                });
+
+            modelBuilder.Entity("CloudComputingExamen1.Models.Inscripciones", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("EventosId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ParticipanteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TipoInscripcionId")
+                    b.Property<int>("ParticipantesId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoInscripcionId");
+                    b.HasIndex("EventosId");
 
-                    b.HasIndex("EventoId");
+                    b.HasIndex("ParticipantesId");
 
-                    b.HasIndex("ParticipanteId");
-
-                    b.HasIndex("TipoInscripcionId");
-
-                    b.ToTable("Inscripcion");
+                    b.ToTable("Inscripciones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Institucion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CorreoElectronico")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Direccion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Telefono")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Institucion");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.MedioPago", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.MediosPagos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -292,10 +219,10 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MedioPago");
+                    b.ToTable("MediosPagos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Pago", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Pagos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -307,33 +234,32 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EstadoPagoId")
-                        .HasColumnType("int");
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("InscripcionId")
+                    b.Property<int>("InscripcionesId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MedioPagoId")
+                    b.Property<int>("MediosPagosId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Monto")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Monto")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EstadoPagoId");
+                    b.HasIndex("InscripcionesId");
 
-                    b.HasIndex("InscripcionId");
+                    b.HasIndex("MediosPagosId");
 
-                    b.HasIndex("MedioPagoId");
-
-                    b.ToTable("Pago");
+                    b.ToTable("Pagos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Participante", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Participantes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -353,8 +279,9 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("InstitucionId")
-                        .HasColumnType("int");
+                    b.Property<string>("Institucion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -366,12 +293,10 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("InstitucionId");
-
-                    b.ToTable("Participante");
+                    b.ToTable("Participantes");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Ponente", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Ponentes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -383,16 +308,13 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Cedula")
+                    b.Property<string>("Correoelectronico")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CorreoElectronico")
+                    b.Property<string>("Especialidad")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("EspecialidadId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -404,12 +326,10 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EspecialidadId");
-
-                    b.ToTable("Ponente");
+                    b.ToTable("Ponentes");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Sesion", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Sesiones", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -421,10 +341,10 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EspacioId")
+                    b.Property<int>("EspaciosId")
                         .HasColumnType("int");
 
-                    b.Property<int>("EventoId")
+                    b.Property<int>("EventosId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaFin")
@@ -437,21 +357,16 @@ namespace CloudComputing.Examen1.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PonenteId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("EspacioId");
+                    b.HasIndex("EspaciosId");
 
-                    b.HasIndex("EventoId");
+                    b.HasIndex("EventosId");
 
-                    b.HasIndex("PonenteId");
-
-                    b.ToTable("Sesion");
+                    b.ToTable("Sesiones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.TipoEvento", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.TipoEventos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -465,48 +380,23 @@ namespace CloudComputing.Examen1.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TipoEvento");
+                    b.ToTable("TipoEventos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.TipoInscripcion", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Certificados", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TipoInscripcion");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Certificado", b =>
-                {
-                    b.HasOne("CloudComputing.Examen1.Models.EstadoCertificado", "EstadoCertificados")
+                    b.HasOne("CloudComputingExamen1.Models.Eventos", "Eventos")
                         .WithMany("Certificados")
-                        .HasForeignKey("EstadoCertificadoId")
+                        .HasForeignKey("EventosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("CloudComputing.Examen1.Models.Evento", "Eventos")
-                        .WithMany("Certificados")
-                        .HasForeignKey("EventoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("EstadoCertificados");
 
                     b.Navigation("Eventos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Evento", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Eventos", b =>
                 {
-                    b.HasOne("CloudComputing.Examen1.Models.TipoEvento", "TipoEventos")
+                    b.HasOne("CloudComputingExamen1.Models.TipoEventos", "TipoEventos")
                         .WithMany("Eventos")
                         .HasForeignKey("TipoEventosId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -515,184 +405,132 @@ namespace CloudComputing.Examen1.API.Migrations
                     b.Navigation("TipoEventos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Inscripcion", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.EventosPonentes", b =>
                 {
-                    b.HasOne("CloudComputing.Examen1.Models.EstadoInscripcion", "EstadoInscripciones")
-                        .WithMany("Inscripciones")
-                        .HasForeignKey("EstadoInscripcionId")
+                    b.HasOne("CloudComputingExamen1.Models.Eventos", "Eventos")
+                        .WithMany("EventosPonentes")
+                        .HasForeignKey("EventosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CloudComputing.Examen1.Models.Evento", "Eventos")
-                        .WithMany("Inscripciones")
-                        .HasForeignKey("EventoId")
+                    b.HasOne("CloudComputingExamen1.Models.Ponentes", "Ponentes")
+                        .WithMany("EventosPonentes")
+                        .HasForeignKey("PonentesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CloudComputing.Examen1.Models.Participante", "Participantes")
-                        .WithMany("Inscripciones")
-                        .HasForeignKey("ParticipanteId")
+                    b.Navigation("Eventos");
+
+                    b.Navigation("Ponentes");
+                });
+
+            modelBuilder.Entity("CloudComputingExamen1.Models.HistoricoCertificados", b =>
+                {
+                    b.HasOne("CloudComputingExamen1.Models.Eventos", "Eventos")
+                        .WithMany("HistoricoCertificados")
+                        .HasForeignKey("EventosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CloudComputing.Examen1.Models.TipoInscripcion", "TipoInscripciones")
+                    b.Navigation("Eventos");
+                });
+
+            modelBuilder.Entity("CloudComputingExamen1.Models.Inscripciones", b =>
+                {
+                    b.HasOne("CloudComputingExamen1.Models.Eventos", "Eventos")
                         .WithMany("Inscripciones")
-                        .HasForeignKey("TipoInscripcionId")
+                        .HasForeignKey("EventosId");
+
+                    b.HasOne("CloudComputingExamen1.Models.Participantes", "Participantes")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("ParticipantesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("EstadoInscripciones");
 
                     b.Navigation("Eventos");
 
                     b.Navigation("Participantes");
-
-                    b.Navigation("TipoInscripciones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Pago", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Pagos", b =>
                 {
-                    b.HasOne("CloudComputing.Examen1.Models.EstadoPago", "EstadoPagos")
+                    b.HasOne("CloudComputingExamen1.Models.Inscripciones", "Inscripciones")
                         .WithMany("Pagos")
-                        .HasForeignKey("EstadoPagoId")
+                        .HasForeignKey("InscripcionesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CloudComputing.Examen1.Models.Inscripcion", "Inscripciones")
+                    b.HasOne("CloudComputingExamen1.Models.MediosPagos", "MediosPagos")
                         .WithMany("Pagos")
-                        .HasForeignKey("InscripcionId")
+                        .HasForeignKey("MediosPagosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("CloudComputing.Examen1.Models.MedioPago", "MedioPagos")
-                        .WithMany("Pagos")
-                        .HasForeignKey("MedioPagoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("EstadoPagos");
 
                     b.Navigation("Inscripciones");
 
-                    b.Navigation("MedioPagos");
+                    b.Navigation("MediosPagos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Participante", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Sesiones", b =>
                 {
-                    b.HasOne("CloudComputing.Examen1.Models.Institucion", "Instituciones")
-                        .WithMany("Participantes")
-                        .HasForeignKey("InstitucionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Instituciones");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Ponente", b =>
-                {
-                    b.HasOne("CloudComputing.Examen1.Models.Especialidad", "Especialidades")
-                        .WithMany("Ponentes")
-                        .HasForeignKey("EspecialidadId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Especialidades");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Sesion", b =>
-                {
-                    b.HasOne("CloudComputing.Examen1.Models.Espacio", "Espacios")
+                    b.HasOne("CloudComputingExamen1.Models.Espacios", "Espacios")
                         .WithMany("Sesiones")
-                        .HasForeignKey("EspacioId")
+                        .HasForeignKey("EspaciosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CloudComputing.Examen1.Models.Evento", "Eventos")
+                    b.HasOne("CloudComputingExamen1.Models.Eventos", "Eventos")
                         .WithMany("Sesiones")
-                        .HasForeignKey("EventoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CloudComputing.Examen1.Models.Ponente", "Ponentes")
-                        .WithMany("Sesiones")
-                        .HasForeignKey("PonenteId")
+                        .HasForeignKey("EventosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Espacios");
 
                     b.Navigation("Eventos");
-
-                    b.Navigation("Ponentes");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Espacio", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Espacios", b =>
                 {
                     b.Navigation("Sesiones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Especialidad", b =>
-                {
-                    b.Navigation("Ponentes");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoCertificado", b =>
-                {
-                    b.Navigation("Certificados");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoInscripcion", b =>
-                {
-                    b.Navigation("Inscripciones");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.EstadoPago", b =>
-                {
-                    b.Navigation("Pagos");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Evento", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Eventos", b =>
                 {
                     b.Navigation("Certificados");
 
+                    b.Navigation("EventosPonentes");
+
+                    b.Navigation("HistoricoCertificados");
+
                     b.Navigation("Inscripciones");
 
                     b.Navigation("Sesiones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Inscripcion", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Inscripciones", b =>
                 {
                     b.Navigation("Pagos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Institucion", b =>
-                {
-                    b.Navigation("Participantes");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.MedioPago", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.MediosPagos", b =>
                 {
                     b.Navigation("Pagos");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Participante", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Participantes", b =>
                 {
                     b.Navigation("Inscripciones");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.Ponente", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.Ponentes", b =>
                 {
-                    b.Navigation("Sesiones");
+                    b.Navigation("EventosPonentes");
                 });
 
-            modelBuilder.Entity("CloudComputing.Examen1.Models.TipoEvento", b =>
+            modelBuilder.Entity("CloudComputingExamen1.Models.TipoEventos", b =>
                 {
                     b.Navigation("Eventos");
-                });
-
-            modelBuilder.Entity("CloudComputing.Examen1.Models.TipoInscripcion", b =>
-                {
-                    b.Navigation("Inscripciones");
                 });
 #pragma warning restore 612, 618
         }

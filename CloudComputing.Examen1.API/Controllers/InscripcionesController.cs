@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CloudComputing.Examen1.API.Data;
-using CloudComputing.Examen1.Models;
+using CloudComputingExamen1.Models;
 
 namespace CloudComputing.Examen1.API.Controllers
 {
@@ -23,36 +23,36 @@ namespace CloudComputing.Examen1.API.Controllers
 
         // GET: api/Inscripciones
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Inscripcion>>> GetInscripcion()
+        public async Task<ActionResult<IEnumerable<Inscripcion>>> GetInscripciones()
         {
-            return await _context.Inscripcion.ToListAsync();
+            return await _context.Inscripciones.ToListAsync();
         }
 
         // GET: api/Inscripciones/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Inscripcion>> GetInscripcion(int id)
+        public async Task<ActionResult<Inscripcion>> GetInscripciones(int id)
         {
-            var inscripcion = await _context.Inscripcion.FindAsync(id);
+            var inscripciones = await _context.Inscripciones.FindAsync(id);
 
-            if (inscripcion == null)
+            if (inscripciones == null)
             {
                 return NotFound();
             }
 
-            return inscripcion;
+            return inscripciones;
         }
 
         // PUT: api/Inscripciones/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutInscripcion(int id, Inscripcion inscripcion)
+        public async Task<IActionResult> PutInscripciones(int id, Inscripcion inscripciones)
         {
-            if (id != inscripcion.Id)
+            if (id != inscripciones.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(inscripcion).State = EntityState.Modified;
+            _context.Entry(inscripciones).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace CloudComputing.Examen1.API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!InscripcionExists(id))
+                if (!InscripcionesExists(id))
                 {
                     return NotFound();
                 }
@@ -76,33 +76,33 @@ namespace CloudComputing.Examen1.API.Controllers
         // POST: api/Inscripciones
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Inscripcion>> PostInscripcion(Inscripcion inscripcion)
+        public async Task<ActionResult<Inscripcion>> PostInscripciones(Inscripcion inscripciones)
         {
-            _context.Inscripcion.Add(inscripcion);
+            _context.Inscripciones.Add(inscripciones);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetInscripcion", new { id = inscripcion.Id }, inscripcion);
+            return CreatedAtAction("GetInscripciones", new { id = inscripciones.Id }, inscripciones);
         }
 
         // DELETE: api/Inscripciones/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteInscripcion(int id)
+        public async Task<IActionResult> DeleteInscripciones(int id)
         {
-            var inscripcion = await _context.Inscripcion.FindAsync(id);
-            if (inscripcion == null)
+            var inscripciones = await _context.Inscripciones.FindAsync(id);
+            if (inscripciones == null)
             {
                 return NotFound();
             }
 
-            _context.Inscripcion.Remove(inscripcion);
+            _context.Inscripciones.Remove(inscripciones);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool InscripcionExists(int id)
+        private bool InscripcionesExists(int id)
         {
-            return _context.Inscripcion.Any(e => e.Id == id);
+            return _context.Inscripciones.Any(e => e.Id == id);
         }
     }
 }
