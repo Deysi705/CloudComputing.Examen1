@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using CloudComputing.Examen1.API.Data;
 
 namespace CloudComputing.Examen1.API
 {
@@ -6,6 +9,8 @@ namespace CloudComputing.Examen1.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("CloudComputingExamen1APIContext") ?? throw new InvalidOperationException("Connection string 'CloudComputingExamen1APIContext' not found.")));
 
             // Add services to the container.
 

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CloudComputing.Examen1.API.props" />
+</Project>
