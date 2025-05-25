@@ -3,80 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3CB4E9C-2FBA-4BAC-B2EC-6E8893763DAB}|CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3CB4E9C-2FBA-4BAC-B2EC-6E8893763DAB}|CloudComputing.Examen1.API.Consumer\\CloudComputing.Examen1.API.Consumer.csproj|solutionrelative:cloudcomputing.examen1.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|solutionrelative:cloudcomputing.examen1.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\tipoinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\tipoinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.api\\migrations\\20250525130546_v01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|solutionrelative:cloudcomputing.examen1.api\\migrations\\20250525130546_v01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\tipoeventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\tipoeventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\sesionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\sesionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\mediopagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\mediopagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\institucionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\institucionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\inscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\inscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\historialcertificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\historialcertificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\estadopagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\estadopagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\ponentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\ponentescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\estadoinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\estadoinscripcionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\estadocertificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\estadocertificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\especialidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\especialidadescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\espacioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\espacioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\certificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\certificadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\libreria.web.mvc\\controllers\\participantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD803D47-1A9F-4192-A192-47302339544A}|Libreria.WEB.MVC\\Libreria.WEB.MVC.csproj|solutionrelative:libreria.web.mvc\\controllers\\participantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|solutionrelative:cloudcomputing.examen1.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3313984-9D0A-47DD-9A90-EACC23E0D989}|CloudComputing.Examen1.Models\\CloudComputing.Examen1.Models.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3313984-9D0A-47DD-9A90-EACC23E0D989}|CloudComputing.Examen1.Models\\CloudComputing.Examen1.Models.csproj|solutionrelative:cloudcomputing.examen1.models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|c:\\users\\deysi\\documents\\sexto\\cloud computing\\vs\\tareas\\cloudcomputing.examen1.api\\cloudcomputing.examen1.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B59915B-F342-4D17-B727-149B8EC3E833}|CloudComputing.Examen1.API\\CloudComputing.Examen1.API.csproj|solutionrelative:cloudcomputing.examen1.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,254 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Crud.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\Crud.cs",
-              "RelativeDocumentMoniker": "CloudComputing.Examen1.API.Consumer\\Crud.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API.Consumer\\Crud.cs",
-              "RelativeToolTip": "CloudComputing.Examen1.API.Consumer\\Crud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:20:11.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TipoInscripcionesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\TipoInscripcionesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\TipoInscripcionesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\TipoInscripcionesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\TipoInscripcionesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250525130546_v01.cs",
+              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Migrations\\20250525130546_v01.cs",
+              "RelativeDocumentMoniker": "CloudComputing.Examen1.API\\Migrations\\20250525130546_v01.cs",
+              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Migrations\\20250525130546_v01.cs",
+              "RelativeToolTip": "CloudComputing.Examen1.API\\Migrations\\20250525130546_v01.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:17:01.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T13:14:27.177Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TipoEventosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\TipoEventosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\TipoEventosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\TipoEventosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\TipoEventosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Program.cs",
+              "RelativeDocumentMoniker": "CloudComputing.Examen1.API\\Program.cs",
+              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Program.cs",
+              "RelativeToolTip": "CloudComputing.Examen1.API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:16:29.17Z",
+              "WhenOpened": "2025-05-25T12:56:44.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CloudComputing.Examen1.API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CloudComputing.Examen1.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T12:51:32.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\appsettings.json",
+              "RelativeDocumentMoniker": "CloudComputing.Examen1.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.API\\appsettings.json",
+              "RelativeToolTip": "CloudComputing.Examen1.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-25T12:48:51.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SesionesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\SesionesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\SesionesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\SesionesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\SesionesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:15:40.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PagosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\PagosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\PagosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\PagosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\PagosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:15:02.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MedioPagosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\MedioPagosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\MedioPagosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\MedioPagosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\MedioPagosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:14:35.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InstitucionesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\InstitucionesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\InstitucionesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\InstitucionesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\InstitucionesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:13:40.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InscripcionesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\InscripcionesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\InscripcionesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\InscripcionesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\InscripcionesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:13:09.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HistorialCertificadosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\HistorialCertificadosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\HistorialCertificadosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\HistorialCertificadosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\HistorialCertificadosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:11:21.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EstadoPagosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoPagosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EstadoPagosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoPagosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EstadoPagosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:10:33.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PonentesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\PonentesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\PonentesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\PonentesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\PonentesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:09:44.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EventosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EventosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EventosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EventosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:08:03.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EstadoInscripcionesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoInscripcionesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EstadoInscripcionesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoInscripcionesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EstadoInscripcionesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:06:45.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EstadoCertificadosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoCertificadosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EstadoCertificadosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EstadoCertificadosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EstadoCertificadosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:04:53.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EspecialidadesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EspecialidadesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EspecialidadesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EspecialidadesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EspecialidadesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:03:43.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EspaciosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EspaciosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\EspaciosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\EspaciosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\EspaciosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:02:18.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CertificadosController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\CertificadosController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\CertificadosController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\CertificadosController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\CertificadosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:00:40.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ParticipantesController.cs",
-              "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\ParticipantesController.cs",
-              "RelativeDocumentMoniker": "Libreria.WEB.MVC\\Controllers\\ParticipantesController.cs",
-              "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\Libreria.WEB.MVC\\Controllers\\ParticipantesController.cs",
-              "RelativeToolTip": "Libreria.WEB.MVC\\Controllers\\ParticipantesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T07:58:13.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.Models\\Pago.cs",
               "RelativeDocumentMoniker": "CloudComputing.Examen1.Models\\Pago.cs",
               "ToolTip": "C:\\Users\\deysi\\Documents\\Sexto\\Cloud computing\\VS\\Tareas\\CloudComputing.Examen1.API\\CloudComputing.Examen1.Models\\Pago.cs",
               "RelativeToolTip": "CloudComputing.Examen1.Models\\Pago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T06:54:02.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T06:54:02.806Z"
             }
           ]
         }

@@ -1,0 +1,12 @@
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\bin\Debug\net8.0\CloudComputing.Examen1.API.Consumer.deps.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\bin\Debug\net8.0\CloudComputing.Examen1.API.Consumer.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\bin\Debug\net8.0\CloudComputing.Examen1.API.Consumer.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.AssemblyInfoInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.AssemblyInfo.cs
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.csproj.CoreCompileInputs.cache
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.sourcelink.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\refint\CloudComputing.Examen1.API.Consumer.dll
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\CloudComputing.Examen1.API.Consumer.pdb
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\CloudComputing.Examen1.API\CloudComputing.Examen1.API.Consumer\obj\Debug\net8.0\ref\CloudComputing.Examen1.API.Consumer.dll
