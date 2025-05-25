@@ -102,6 +102,5 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
                 return View(sesion);
             }
         }
-        }
     }
 }

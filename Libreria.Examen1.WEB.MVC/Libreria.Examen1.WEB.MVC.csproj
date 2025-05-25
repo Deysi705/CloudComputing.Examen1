@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,29 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+
   <ItemGroup>
-    <ProjectReference Include="..\CloudComputing.Examen1.API.Consumer\CloudComputing.Examen1.API.Consumer.csproj" />
-    <ProjectReference Include="..\CloudComputing.Examen1.Models\CloudComputing.Examen1.Models.csproj" />
+    <PackageReference Include="microsoft.aspnetcore.mvc.newtonsoftjson" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Certificados\" />
-    <Folder Include="Views\Espacios\" />
-    <Folder Include="Views\Especialidades\" />
-    <Folder Include="Views\EstadoCertificados\" />
-    <Folder Include="Views\EstadoInscripciones\" />
-    <Folder Include="Views\EstadoPagos\" />
-    <Folder Include="Views\Eventos\" />
-    <Folder Include="Views\HistorialCertificados\" />
-    <Folder Include="Views\Inscripciones\" />
-    <Folder Include="Views\Instituciones\" />
-    <Folder Include="Views\MedioPagos\" />
-    <Folder Include="Views\TipoInscripciones\" />
-    <Folder Include="Views\TipoEventos\" />
-    <Folder Include="Views\Sesiones\" />
-    <Folder Include="Views\Ponentes\" />
-    <Folder Include="Views\Participantes\" />
-    <Folder Include="Views\Pagos\" />
+    <ProjectReference Include="..\CloudComputing.Examen1.API.Consumer\CloudComputing.Examen1.API.Consumer.csproj" />
+    <ProjectReference Include="..\CloudComputing.Examen1.Models\CloudComputing.Examen1.Models.csproj" />
   </ItemGroup>
 
 </Project>

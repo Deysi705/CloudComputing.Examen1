@@ -14,5 +14,11 @@ namespace CloudComputing.Examen1.Models
         public int CertificadoId { get; set; }
         public int PagoId { get; set; }
 
+        //Relaciones
+        public Participante? Participantes { get; set; }
+        public Evento? Eventos { get; set; }
+        public Certificado? Certificados { get; set; }
+        public Pago? Pagos { get; set; }
+
     }
 }
