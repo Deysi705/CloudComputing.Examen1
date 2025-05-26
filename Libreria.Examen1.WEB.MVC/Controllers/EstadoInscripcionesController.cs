@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CloudComputing.Examen1.API.Consumer;
+using CloudComputing.Examen1.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Examen1.WEB.MVC.Controllers
@@ -8,13 +10,15 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // GET: EstadoInscripcionesController
         public ActionResult Index()
         {
-            return View();
+            var data = Crud<EstadoInscripcion>.GetAll().Result;
+            return View(data);
         }
 
         // GET: EstadoInscripcionesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var data = Crud<EstadoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // GET: EstadoInscripcionesController/Create
@@ -26,43 +30,49 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // POST: EstadoInscripcionesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(EstadoInscripcion estadoInscripcion)
         {
             try
             {
+                Crud<EstadoInscripcion>.Create(estadoInscripcion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(estadoInscripcion);
             }
         }
 
         // GET: EstadoInscripcionesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var data = Crud<EstadoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EstadoInscripcionesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, EstadoInscripcion estadoInscripcion)
         {
             try
             {
+                Crud<EstadoInscripcion>.Update(id, estadoInscripcion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(estadoInscripcion);
             }
         }
 
         // GET: EstadoInscripcionesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = Crud<EstadoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EstadoInscripcionesController/Delete/5
@@ -72,10 +82,12 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         {
             try
             {
+                Crud<EstadoInscripcion>.Delete(id).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }

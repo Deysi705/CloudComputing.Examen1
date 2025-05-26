@@ -208,14 +208,14 @@ namespace CloudComputing.Examen1.API.Migrations
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TipoEventosId = table.Column<int>(type: "int", nullable: false)
+                    TipoEventoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Evento", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Evento_TipoEvento_TipoEventosId",
-                        column: x => x.TipoEventosId,
+                        name: "FK_Evento_TipoEvento_TipoEventoId",
+                        column: x => x.TipoEventoId,
                         principalTable: "TipoEvento",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -376,9 +376,9 @@ namespace CloudComputing.Examen1.API.Migrations
                 column: "EventoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Evento_TipoEventosId",
+                name: "IX_Evento_TipoEventoId",
                 table: "Evento",
-                column: "TipoEventosId");
+                column: "TipoEventoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Inscripcion_EstadoInscripcionId",

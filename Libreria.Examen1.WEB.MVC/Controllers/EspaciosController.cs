@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Libreria.Examen1.WEB.MVC.Controllers
 {
     public class EspaciosController : Controller
-    {
+    {   
         // GET: EspaciosController
         public ActionResult Index()
         {

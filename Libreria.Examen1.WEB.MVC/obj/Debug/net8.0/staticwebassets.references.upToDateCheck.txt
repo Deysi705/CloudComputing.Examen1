@@ -1,3 +1,4 @@
 C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\deysi\Documents\Sexto\Cloud computing\VS\Tareas\Examen\CloudComputing.Examen1.API\CloudComputing.Examen1.API\obj\Debug\net8.0\staticwebassets.build.json

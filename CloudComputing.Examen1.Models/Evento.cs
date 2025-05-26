@@ -16,7 +16,7 @@ namespace CloudComputing.Examen1.Models
         public string Descripcion { get; set; }
 
         //FK
-        public int TipoEventosId { get; set; }
+        public int TipoEventoId { get; set; }
 
         // Relaciones
         public TipoEvento? TipoEventos { get; set; }

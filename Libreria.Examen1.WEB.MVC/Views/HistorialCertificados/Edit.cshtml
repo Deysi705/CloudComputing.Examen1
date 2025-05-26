@@ -17,24 +17,33 @@
                 <input asp-for="Id" class="form-control" />
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="ParticipanteId" class="control-label"></label>
-                <input asp-for="ParticipanteId" class="form-control" />
+                <select asp-for="ParticipanteId" asp-items="@ViewBag.ListaParticipantes" class="form-select">
+                    <option selected="selected" value="">--Elija un Participante--</option>
+                </select>
                 <span asp-validation-for="ParticipanteId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EventoId" class="control-label"></label>
-                <input asp-for="EventoId" class="form-control" />
+                <select asp-for="EventoId" asp-items="@ViewBag.ListaEventos" class="form-select">
+                    <option selected="selected" value="">--Elija un Evento--</option>
+                </select>
                 <span asp-validation-for="EventoId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CertificadoId" class="control-label"></label>
-                <input asp-for="CertificadoId" class="form-control" />
+                <select asp-for="CertificadoId" asp-items="@ViewBag.ListaCertificados" class="form-select">
+                    <option selected="selected" value="">--Elija un Certificado--</option>
+                </select>
                 <span asp-validation-for="CertificadoId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PagoId" class="control-label"></label>
-                <input asp-for="PagoId" class="form-control" />
+                <select asp-for="PagoId" asp-items="@ViewBag.ListaPagos" class="form-select">
+                    <option selected="selected" value="">--Elija un Pago--</option>
+                </select>
                 <span asp-validation-for="PagoId" class="text-danger"></span>
             </div>
             <div class="form-group">

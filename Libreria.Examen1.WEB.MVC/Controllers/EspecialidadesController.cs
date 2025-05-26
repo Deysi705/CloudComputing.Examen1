@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CloudComputing.Examen1.API.Consumer;
+using CloudComputing.Examen1.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Examen1.WEB.MVC.Controllers
@@ -8,13 +10,15 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // GET: EspecialidadesController
         public ActionResult Index()
         {
-            return View();
+            var data = Crud<Especialidad>.GetAll().Result;
+            return View(data);
         }
 
         // GET: EspecialidadesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var data = Crud<Especialidad>.Get(id).Result;
+            return View(data);
         }
 
         // GET: EspecialidadesController/Create
@@ -26,43 +30,49 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // POST: EspecialidadesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Especialidad especialidad)
         {
             try
             {
+                Crud<Especialidad>.Create(especialidad).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(especialidad);
             }
         }
 
         // GET: EspecialidadesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var data = Crud<Especialidad>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EspecialidadesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Especialidad especialidad)
         {
             try
             {
+                Crud<Especialidad>.Update(id, especialidad).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(especialidad);
             }
         }
 
         // GET: EspecialidadesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = Crud<Especialidad>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EspecialidadesController/Delete/5
@@ -72,10 +82,12 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         {
             try
             {
+                Crud<Especialidad>.Delete(id).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }

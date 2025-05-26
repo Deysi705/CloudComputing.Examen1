@@ -44,7 +44,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="InstitucionId" class="control-label"></label>
-                <input asp-for="InstitucionId" class="form-control" />
+                <select asp-for="InstitucionId" asp-items="@ViewBag.ListaInstituciones" class="form-select">
+                    <option selected="selected" value="">--Elija una Institución--</option>
+                </select>
                 <span asp-validation-for="InstitucionId" class="text-danger"></span>
             </div>
             <div class="form-group">

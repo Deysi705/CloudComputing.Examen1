@@ -10,4 +10,9 @@
     <PackageReference Include="newtonsoft.json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CloudComputing.Examen1.API\CloudComputing.Examen1.API.csproj" />
+    <ProjectReference Include="..\CloudComputing.Examen1.Models\CloudComputing.Examen1.Models.csproj" />
+  </ItemGroup>
+
 </Project>

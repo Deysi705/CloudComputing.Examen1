@@ -20,7 +20,7 @@
                 }
             }
         }
-        public static async Task<List<T>> GetAll()
+        /*public static async Task<List<T>> GetAll()
         {
             using (var client = new HttpClient())
             {
@@ -36,7 +36,39 @@
                     throw new Exception("Error fetching data");
                 }
             }
+        }*/
+        private static readonly HttpClient client = new HttpClient();
+
+        public static async Task<List<T>> GetAll()
+        {
+            try
+            {
+                var response = await client.GetAsync(EndPoint);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                    return new List<T>(); // Devuelve lista vacía en caso de error
+                }
+
+                var json = await response.Content.ReadAsStringAsync();
+
+                if (string.IsNullOrEmpty(json))
+                {
+                    Console.WriteLine("Error: Respuesta vacía.");
+                    return new List<T>();
+                }
+
+                var data = Newtonsoft.Json.JsonConvert.DeserializeObject<List<T>>(json);
+                return data ?? new List<T>(); // Evita valores nulos
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Excepción: {ex.Message}");
+                return new List<T>();
+            }
         }
+
         public static async Task<T> Create(T item)
         {
             using (var client = new HttpClient())

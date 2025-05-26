@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CloudComputing.Examen1.API.Consumer;
+using CloudComputing.Examen1.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Examen1.WEB.MVC.Controllers
@@ -8,13 +10,15 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // GET: InstitucionesController
         public ActionResult Index()
         {
-            return View();
+            var data = Crud<Institucion>.GetAll().Result;
+            return View(data);
         }
 
         // GET: InstitucionesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var data = Crud<Institucion>.Get(id).Result;
+            return View(data);
         }
 
         // GET: InstitucionesController/Create
@@ -26,43 +30,49 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // POST: InstitucionesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Institucion institucion)
         {
             try
             {
+                Crud<Institucion>.Create(institucion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(institucion);
             }
         }
 
         // GET: InstitucionesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var data = Crud<Institucion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: InstitucionesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Institucion institucion)
         {
             try
             {
+                Crud<Institucion>.Update(id, institucion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(institucion);
             }
         }
 
         // GET: InstitucionesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = Crud<Institucion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: InstitucionesController/Delete/5
@@ -72,10 +82,12 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         {
             try
             {
+                Crud<Institucion>.Delete(id).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }

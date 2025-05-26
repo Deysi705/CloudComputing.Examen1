@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CloudComputing.Examen1.API.Consumer;
+using CloudComputing.Examen1.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Examen1.WEB.MVC.Controllers
@@ -8,13 +10,15 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // GET: EstadoCertificadosController
         public ActionResult Index()
         {
-            return View();
+            var data = Crud<EstadoCertificado>.GetAll().Result;
+            return View(data);
         }
 
         // GET: EstadoCertificadosController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var data = Crud<EstadoCertificado>.Get(id).Result;
+            return View(data);
         }
 
         // GET: EstadoCertificadosController/Create
@@ -26,43 +30,49 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // POST: EstadoCertificadosController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(EstadoCertificado estadoCertificado)
         {
             try
             {
+                Crud<EstadoCertificado>.Create(estadoCertificado).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(estadoCertificado);
             }
         }
 
         // GET: EstadoCertificadosController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var data = Crud<EstadoCertificado>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EstadoCertificadosController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, EstadoCertificado estadoCertificado)
         {
             try
             {
+                Crud<EstadoCertificado>.Update(id, estadoCertificado).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(estadoCertificado);
             }
         }
 
         // GET: EstadoCertificadosController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = Crud<EstadoCertificado>.Get(id).Result;
+            return View(data);
         }
 
         // POST: EstadoCertificadosController/Delete/5
@@ -72,10 +82,12 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         {
             try
             {
+                Crud<EstadoCertificado>.Delete(id).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }

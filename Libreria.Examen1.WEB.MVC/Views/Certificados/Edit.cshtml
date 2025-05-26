@@ -15,7 +15,7 @@
             <div class="form-group">
                 <label asp-for="Id" class="control-label"></label>
                 <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
+                <span as+p-validation-for="Id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaEmision" class="control-label"></label>
@@ -39,12 +39,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="EventoId" class="control-label"></label>
-                <input asp-for="EventoId" class="form-control" />
+                <select asp-for="EventoId" asp-items="@ViewBag.ListaEventos" class="form-select">
+                    <option selected="selected" value="">--Elija un Evento--</option>
+                </select>
                 <span asp-validation-for="EventoId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EstadoCertificadoId" class="control-label"></label>
-                <input asp-for="EstadoCertificadoId" class="form-control" />
+                <select asp-for="EstadoCertificadoId" asp-items="@ViewBag.ListaEstadoCertificados" class="form-select">
+                    <option selected="selected" value="">--Elija un Estado--</option>
+                </select>
                 <span asp-validation-for="EstadoCertificadoId" class="text-danger"></span>
             </div>
             <div class="form-group">

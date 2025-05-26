@@ -12,11 +12,7 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="Nombre" class="control-label"></label>
                 <input asp-for="Nombre" class="form-control" />
@@ -39,17 +35,23 @@
             </div>
             <div class="form-group">
                 <label asp-for="EspacioId" class="control-label"></label>
-                <input asp-for="EspacioId" class="form-control" />
+                <select asp-for="EspacioId" asp-items="@ViewBag.ListaEspacios" class="form-select">
+                    <option selected="selected" value="">--Elija un Espacio--</option>
+                </select>
                 <span asp-validation-for="EspacioId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EventoId" class="control-label"></label>
-                <input asp-for="EventoId" class="form-control" />
+                <select asp-for="EventoId" asp-items="@ViewBag.ListaEventos" class="form-select">
+                    <option selected="selected" value="">--Elija un Evento--</option>
+                </select>
                 <span asp-validation-for="EventoId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PonenteId" class="control-label"></label>
-                <input asp-for="PonenteId" class="form-control" />
+                <select asp-for="PonenteId" asp-items="@ViewBag.ListaPonentes" class="form-select">
+                    <option selected="selected" value="">--Elija un Ponente--</option>
+                </select>
                 <span asp-validation-for="PonenteId" class="text-danger"></span>
             </div>
             <div class="form-group">

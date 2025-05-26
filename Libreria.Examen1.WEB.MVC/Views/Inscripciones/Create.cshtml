@@ -12,11 +12,7 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="Fecha" class="control-label"></label>
                 <input asp-for="Fecha" class="form-control" />
@@ -24,22 +20,30 @@
             </div>
             <div class="form-group">
                 <label asp-for="ParticipanteId" class="control-label"></label>
-                <input asp-for="ParticipanteId" class="form-control" />
+                <select asp-for="ParticipanteId" asp-items="@ViewBag.ListaParticipantes" class="form-select">
+                    <option selected="selected" value="">--Elija un Participante--</option>
+                </select>
                 <span asp-validation-for="ParticipanteId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TipoInscripcionId" class="control-label"></label>
-                <input asp-for="TipoInscripcionId" class="form-control" />
+                <select asp-for="TipoInscripcionId" asp-items="@ViewBag.ListaTipoInscripciones" class="form-select">
+                    <option selected="selected" value="">--Elija una Inscripción--</option>
+                </select>
                 <span asp-validation-for="TipoInscripcionId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EstadoInscripcionId" class="control-label"></label>
-                <input asp-for="EstadoInscripcionId" class="form-control" />
+                <select asp-for="EstadoInscripcionId" asp-items="@ViewBag.ListaEstadoInscripciones" class="form-select">
+                    <option selected="selected" value="">--Elija un Estado de Inscripción--</option>
+                </select>
                 <span asp-validation-for="EstadoInscripcionId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EventoId" class="control-label"></label>
-                <input asp-for="EventoId" class="form-control" />
+                <select asp-for="EventoId" asp-items="@ViewBag.ListaEventos" class="form-select">
+                    <option selected="selected" value="">--Elija un Evento--</option>
+                </select>
                 <span asp-validation-for="EventoId" class="text-danger"></span>
             </div>
             <div class="form-group">

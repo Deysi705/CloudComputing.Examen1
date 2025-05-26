@@ -12,11 +12,7 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
+            
             <div class="form-group">
                 <label asp-for="Cedula" class="control-label"></label>
                 <input asp-for="Cedula" class="form-control" />
@@ -44,7 +40,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="InstitucionId" class="control-label"></label>
-                <input asp-for="InstitucionId" class="form-control" />
+                <select asp-for="InstitucionId" asp-items="@ViewBag.ListaInstituciones" class="form-select">
+                    <option selected="selected" value="">--Elija una Institución--</option>
+                </select>
                 <span asp-validation-for="InstitucionId" class="text-danger"></span>
             </div>
             <div class="form-group">

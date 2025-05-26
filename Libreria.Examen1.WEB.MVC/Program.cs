@@ -8,7 +8,7 @@ namespace Libreria.Examen1.WEB.MVC
         public static void Main(string[] args)
         {
 
-            var BaseUrl = "https://localhost:7299/api/";
+            var BaseUrl = "https://localhost:7299/api";
 
             Crud<Certificado>.EndPoint = $"{BaseUrl}/Certificados";
             Crud<Espacio>.EndPoint = $"{BaseUrl}/Espacios";

@@ -3372,7 +3372,7 @@
             "type": "string",
             "nullable": true
           },
-          "tipoEventosId": {
+          "tipoEventoId": {
             "type": "integer",
             "format": "int32"
           },
@@ -3425,6 +3425,18 @@
           "pagoId": {
             "type": "integer",
             "format": "int32"
+          },
+          "participantes": {
+            "$ref": "#/components/schemas/Participante"
+          },
+          "eventos": {
+            "$ref": "#/components/schemas/Evento"
+          },
+          "certificados": {
+            "$ref": "#/components/schemas/Certificado"
+          },
+          "pagos": {
+            "$ref": "#/components/schemas/Pago"
           }
         },
         "additionalProperties": false

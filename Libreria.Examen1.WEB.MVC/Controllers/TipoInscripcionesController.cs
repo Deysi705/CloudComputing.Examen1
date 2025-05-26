@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CloudComputing.Examen1.API.Consumer;
+using CloudComputing.Examen1.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Libreria.Examen1.WEB.MVC.Controllers
@@ -8,13 +10,15 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // GET: TipoInscripcionesController
         public ActionResult Index()
         {
-            return View();
+            var data = Crud<TipoInscripcion>.GetAll().Result;
+            return View(data);
         }
 
         // GET: TipoInscripcionesController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var data = Crud<TipoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // GET: TipoInscripcionesController/Create
@@ -26,43 +30,49 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         // POST: TipoInscripcionesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(TipoInscripcion tipoInscripcion)
         {
             try
             {
+                Crud<TipoInscripcion>.Create(tipoInscripcion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(tipoInscripcion);
             }
         }
 
         // GET: TipoInscripcionesController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var data = Crud<TipoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: TipoInscripcionesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, TipoInscripcion tipoInscripcion)
         {
             try
             {
+                Crud<TipoInscripcion>.Update(id, tipoInscripcion).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ViewBag.Error = ex.Message;
+                return View(tipoInscripcion);
             }
         }
 
         // GET: TipoInscripcionesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var data = Crud<TipoInscripcion>.Get(id).Result;
+            return View(data);
         }
 
         // POST: TipoInscripcionesController/Delete/5
@@ -72,10 +82,12 @@ namespace Libreria.Examen1.WEB.MVC.Controllers
         {
             try
             {
+                Crud<TipoInscripcion>.Delete(id).Wait();
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }
